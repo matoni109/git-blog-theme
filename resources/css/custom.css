@@ -3,6 +3,7 @@ article > *:not(.entry-content),
     @apply mx-auto max-w-content;
 }
 
+
 .entry-content, .block-editor-block-list__layout {
     h1 {
         @apply text-2xl;
@@ -39,4 +40,33 @@ article > *:not(.entry-content),
             @apply list-decimal list-inside;
         }
     }
+}
+
+/* custom page selector */
+
+/* .current_page_item, .current-menu-item,
+.current-menu-parent {} */
+
+.current_page_item, .current-menu-parent {
+  /* font-weight: bold; */
+  @apply text-primary;
+}
+
+ .page_item {
+ font-weight: bold;
+}
+
+/* custom drop shadow */
+#primary-menu .sub-menu:after, #primary-menu .sub-menu::before {
+content: "";
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-bottom: 8px solid #fff;
+height: 0;
+left: 50%;
+position: absolute;
+top: -8px;
+transform: translate(-50%);
+width: 0;
+z-index: 2;
 }
