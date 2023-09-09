@@ -45,10 +45,10 @@ article > *:not(.entry-content),
 /* custom page selector */
 
 /* .current_page_item, .current-menu-item,
-.current-menu-parent {} */
+.current-menu-parent {}
 
 .current_page_item, .current-menu-parent {
-  /* font-weight: bold; */
+  /* font-weight: bold;
   @apply text-primary;
 }
 

@@ -60,16 +60,17 @@
           <?php
           wp_nav_menu(array(
             'container_id'    => 'primary-menu',
-            'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
-            'menu_class'      => 'lg:flex lg:-mx-4',
+            'container_class' => 'hidden mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+            'menu_class'      => 'flex flex-col lg:flex-row lg:-mx-4',
             'theme_location'  => 'primary',
-            'li_class_0'      => 'lg:mx-4 lg:relative group hover:text-primary',
-            'li_class_1'      => 'hover:italic text-gray-700 hover:text-primary',
-            'submenu_class'   => 'lg:hidden group-hover:block shadow-behind lg:absolute lg:left-1/2 lg:top-6 transform -translate-x-1/2 lg:rounded lg:w-48 lg:max-w-xl lg:bg-white p-4 block border font-mono ',
+            'li_class_0'      => 'pt-4 lg:pt-0 text-xl lg:text-base lg:mx-4 lg:relative group hover:text-primary',
+            'li_class_1'      => 'pt-4 lg:pt-0 lg:hover:italic lg:text-gray-700 hover:text-primary',
+            'submenu_class'   => 'lg:hidden lg:group-hover:block lg:shadow-behind lg:absolute lg:left-1/2 lg:top-6 lg:transform lg:-translate-x-1/2 lg:rounded lg:w-48 lg:max-w-xl lg:bg-white lg:p-4 lg:block lg:border',
             'fallback_cb'     => false,
           ));
           ?>
         </div>
+
       </div>
     </header>
 
