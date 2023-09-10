@@ -84,7 +84,7 @@
             'container_class' => 'hidden lg:bg-transparent lg:block',
             'menu_class'      => 'flex flex-row -mx-4',
             'theme_location'  => 'primary',
-            'li_class_0'      => 'pt-0 text-large mx-4 relative group hover:text-primary',
+            'li_class_0'      => 'flex items-center pt-0 text-large mx-4 relative group hover:text-primary',
             'li_class_1'      => 'pt-0 hover:italic text-gray-700 hover:text-primary',
             'submenu_class'   => 'lg:hidden lg:group-hover:block shadow-behind absolute left-1/2 top-6 transform -translate-x-1/2 rounded w-48 max-w-xl bg-white p-4 block border',
             'fallback_cb'     => false,
