@@ -44,6 +44,8 @@
               <?php } ?>
             </div>
 
+            <!-- Mobile Navigation -->
+
             <div class="lg:hidden">
               <a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
                 <svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -55,20 +57,42 @@
                 </svg>
               </a>
             </div>
+
           </div>
+
+          <div class="visible lg:invisible">
+            <?php
+            wp_nav_menu(array(
+              'container_id'    => 'primary-menu',
+              'container_class' => 'hidden mt-4 p-4',
+              'menu_class'      => 'flex flex-col',
+              'theme_location'  => 'primary',
+              'li_class_0'      => 'pt-4 text-xl group',
+              'li_class_1'      => 'pt-4',
+              'fallback_cb'     => false,
+              'walker' => new LTM_Menu_Walker(),
+              'is_mobile_menu' => true,
+            ));
+            ?>
+          </div>
+
+          <!-- Desktop Navigation -->
 
           <?php
           wp_nav_menu(array(
             'container_id'    => 'primary-menu',
-            'container_class' => 'hidden mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
-            'menu_class'      => 'flex flex-col lg:flex-row lg:-mx-4',
+            'container_class' => 'hidden lg:bg-transparent lg:block',
+            'menu_class'      => 'flex flex-row -mx-4',
             'theme_location'  => 'primary',
-            'li_class_0'      => 'pt-4 lg:pt-0 text-xl lg:text-base lg:mx-4 lg:relative group hover:text-primary',
-            'li_class_1'      => 'pt-4 lg:pt-0 lg:hover:italic lg:text-gray-700 hover:text-primary',
-            'submenu_class'   => 'lg:hidden lg:group-hover:block lg:shadow-behind lg:absolute lg:left-1/2 lg:top-6 lg:transform lg:-translate-x-1/2 lg:rounded lg:w-48 lg:max-w-xl lg:bg-white lg:p-4 lg:block lg:border',
+            'li_class_0'      => 'pt-0 text-large mx-4 relative group hover:text-primary',
+            'li_class_1'      => 'pt-0 hover:italic text-gray-700 hover:text-primary',
+            'submenu_class'   => 'lg:hidden lg:group-hover:block shadow-behind absolute left-1/2 top-6 transform -translate-x-1/2 rounded w-48 max-w-xl bg-white p-4 block border',
             'fallback_cb'     => false,
+            'walker' => new LTM_Menu_Walker(),
+            'is_mobile_menu' => false,
           ));
           ?>
+
         </div>
 
       </div>

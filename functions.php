@@ -135,3 +135,13 @@ function git_blog_theme_posts_from_loop($amount, $callback)
 }
 
 add_filter('nav_menu_submenu_css_class', 'git_blog_theme_nav_menu_add_submenu_class', 10, 3);
+
+class LTM_Menu_Walker extends Walker_Nav_Menu
+{
+  public function end_el(&$output, $item, $depth = 0, $args = array())
+  {
+    if ($args->is_mobile_menu == false && in_array('menu-item-has-children', $item->classes ?? [])) {
+      $output .= '<h1>TEST</h1></li>';
+    }
+  }
+}
