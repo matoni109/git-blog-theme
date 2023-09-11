@@ -33,7 +33,7 @@
                 <?php the_custom_logo(); ?>
               <?php } else { ?>
                 <a href="<?php echo get_bloginfo('url'); ?>" class="flex items-center font-extrabold text-lg font-mono">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/github-mark.svg" class="w-8 mr-4">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/github-mark.svg" class="object-scale-down w-8 mr-4">
                   <?php echo get_bloginfo('name'); ?>
                 </a>
 

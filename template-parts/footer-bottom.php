@@ -1,5 +1,5 @@
 <div class="bg-gray-light">
-  <div class="container-lg responsive py-4 flex flex-col justify-between">
+  <div class="container-lg py-4 flex flex-col justify-between md:flex-row md:flex-row-reverse">
     <ul class="list-none flex items-center mb-3">
       <li class="mr-3">
         <a href="#twitter">
