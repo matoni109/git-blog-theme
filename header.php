@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <?php wp_head(); ?>
 </head>
 
@@ -48,16 +48,18 @@
 
             <div class="lg:hidden">
               <a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-                <svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-                    <g id="icon-shape">
-                      <path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
-                    </g>
-                  </g>
-                </svg>
+                <button x-data="{ open: false }" x-on:click="open = !open" class="flex items-center space-x-2 focus:outline-none">
+                  <span class="invisible">🔥</span>
+                  <div class="w-6 flex items-center justify-center relative">
+                    <span x-bind:class="open ? 'translate-y-0 rotate-45' : '-translate-y-2'" class="transform transition w-full h-0.5 bg-current absolute"></span>
+
+                    <span x-bind:class="open ? 'opacity-0 translate-x-3' : 'opacity-100'" class="transform transition w-full h-0.5 bg-current absolute"></span>
+
+                    <span x-bind:class="open ? 'translate-y-0 -rotate-45' : 'translate-y-2'" class="transform transition w-full h-0.5 bg-current absolute"></span>
+                  </div>
+                </button>
               </a>
             </div>
-
           </div>
 
           <div class="visible lg:invisible">
@@ -84,7 +86,7 @@
             'container_class' => 'hidden lg:bg-transparent lg:block',
             'menu_class'      => 'flex flex-row -mx-4',
             'theme_location'  => 'primary',
-            'li_class_0'      => 'flex items-center pt-0 text-large mx-4 relative group hover:text-primary',
+            'li_class_0'      => 'flex items-center text-large mx-4 relative group hover:text-primary',
             'li_class_1'      => 'pt-0 hover:italic text-gray-700 hover:text-primary',
             'submenu_class'   => 'lg:hidden lg:group-hover:block shadow-behind absolute left-1/2 top-6 transform -translate-x-1/2 rounded w-48 max-w-xl bg-white p-4 block border',
             'fallback_cb'     => false,
