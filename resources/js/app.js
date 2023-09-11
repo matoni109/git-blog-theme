@@ -1,3 +1,4 @@
+// take this out for vanilla at some point
 import Alpine from "alpinejs";
 
 window.Alpine = Alpine;
