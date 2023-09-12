@@ -56,6 +56,12 @@ article > *:not(.entry-content),
  font-weight: bold;
 }
 
+/* footer custom css */
+footer a:hover {
+  @apply text-primary;
+  text-decoration-line: underline;
+}
+
 /* custom drop shadow */
 #primary-menu .sub-menu:after, #primary-menu .sub-menu::before {
 content: "";

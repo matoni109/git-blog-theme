@@ -4,7 +4,7 @@
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/GitHub_Logo.png" class="object-scale-down h-8" aria-label="logo-github">
     </a>
   </div>
-  <!-- try flex basis -->
+
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 lg:pr-0 lg:pl-4">
     <h2 class="h5 mb-3 font-mono">Product</h2>
     <ul class="list-none">
