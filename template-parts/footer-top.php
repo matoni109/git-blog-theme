@@ -4,9 +4,10 @@
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/GitHub_Logo.png" class="object-scale-down h-8" aria-label="logo-github">
     </a>
   </div>
-  <div class="flex-auto mb-6 md:mb-2 pr-3 lg:pr-0 lg:pl-4">
-    <h2 class="h5 mb-3 font-mono text-base">Product</h2>
-    <ul class="list-none f5">
+  <!-- try flex basis -->
+  <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 lg:pr-0 lg:pl-4">
+    <h2 class="h5 mb-3 font-mono">Product</h2>
+    <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/features" class="link-gray">Features</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/security" class="link-gray">Security</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/enterprise" class="link-gray">Enterprise</a></li>
@@ -15,9 +16,9 @@
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://resources.github.com/" class="link-gray">Resources</a></li>
     </ul>
   </div>
-  <div class="flex-auto mb-6 md:mb-2 pr-3 pr-md-0 md:pl-4">
-    <h2 class="h5 mb-3 font-mono text-base">Platform</h2>
-    <ul class="list-none f5">
+  <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 pr-md-0 md:pl-4">
+    <h2 class="h5 mb-3 font-mono">Platform</h2>
+    <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://developer.github.com/" class="link-gray">Developer API</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://partner.github.com/" class="link-gray">Partners</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://atom.io/" class="link-gray">Atom</a></li>
@@ -25,9 +26,9 @@
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://desktop.github.com/" class="link-gray">GitHub Desktop</a></li>
     </ul>
   </div>
-  <div class="flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
-    <h2 class="h5 mb-3 font-mono text-base">Support</h2>
-    <ul class="list-none f5">
+  <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
+    <h2 class="h5 mb-3 font-mono">Support</h2>
+    <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://docs.github.com/" class="link-gray">Docs</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.community/" class="link-gray">Community Forum</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://services.github.com/" class="link-gray">Training</a></li>
@@ -35,9 +36,9 @@
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://support.github.com/" class="link-gray">Contact</a></li>
     </ul>
   </div>
-  <div class="flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
-    <h2 class="h5 mb-3 font-mono text-base">Company</h2>
-    <ul class="list-none f5">
+  <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
+    <h2 class="h5 mb-3 font-mono">Company</h2>
+    <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/about" class="link-gray">About</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.blog/" class="link-gray">Blog</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/about/careers" class="link-gray">Careers</a></li>
