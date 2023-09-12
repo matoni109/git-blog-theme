@@ -3111,11 +3111,13 @@ ${expression ? 'Expression: "' + expression + '"\n\n' : ""}`, el);
   // resources/js/app.js
   window.Alpine = module_default;
   module_default.start();
-  window.addEventListener("load", function() {
+  window.addEventListener("load", () => {
     let main_navigation = document.querySelector("#primary-menu");
-    document.querySelector("#primary-menu-toggle").addEventListener("click", function(e) {
+    let main_navigation_button = document.querySelector("#primary-menu-button");
+    document.querySelector("#primary-menu-toggle").addEventListener("click", (e) => {
       e.preventDefault();
       main_navigation.classList.toggle("hidden");
+      main_navigation_button.classList.toggle("hidden");
     });
   });
 })();

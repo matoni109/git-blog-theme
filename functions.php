@@ -35,6 +35,7 @@ function git_blog_theme_setup()
 }
 
 add_action('after_setup_theme', 'git_blog_theme_setup');
+add_filter('wpcf7_autop_or_not', '__return_false');
 
 /**
  * Enqueue theme assets.

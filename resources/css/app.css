@@ -3,4 +3,5 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "custom.css";
+@import "custom.scss";
+@import "contact-from-7.scss"

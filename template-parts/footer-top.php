@@ -6,7 +6,7 @@
   </div>
 
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 lg:pr-0 lg:pl-4">
-    <h2 class="h5 mb-3 font-mono">Product</h2>
+    <h5 class="h5 mb-3 font-mono">Product</h5>
     <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/features" class="link-gray">Features</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/security" class="link-gray">Security</a></li>
@@ -17,7 +17,7 @@
     </ul>
   </div>
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 pr-md-0 md:pl-4">
-    <h2 class="h5 mb-3 font-mono">Platform</h2>
+    <h5 class="h5 mb-3 font-mono">Platform</h5>
     <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://developer.github.com/" class="link-gray">Developer API</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://partner.github.com/" class="link-gray">Partners</a></li>
@@ -27,7 +27,7 @@
     </ul>
   </div>
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
-    <h2 class="h5 mb-3 font-mono">Support</h2>
+    <h5 class="h5 mb-3 font-mono">Support</h5>
     <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://docs.github.com/" class="link-gray">Docs</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.community/" class="link-gray">Community Forum</a></li>
@@ -37,7 +37,7 @@
     </ul>
   </div>
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
-    <h2 class="h5 mb-3 font-mono">Company</h2>
+    <h5 class="h5 mb-3 font-mono">Company</h5>
     <ul class="list-none">
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/about" class="link-gray">About</a></li>
       <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.blog/" class="link-gray">Blog</a></li>
