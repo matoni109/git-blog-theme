@@ -35,6 +35,10 @@ function git_blog_theme_setup()
 }
 
 add_action('after_setup_theme', 'git_blog_theme_setup');
+
+/**
+ * Remove <p> tags inside contact-form-7.
+ */
 add_filter('wpcf7_autop_or_not', '__return_false');
 
 /**
