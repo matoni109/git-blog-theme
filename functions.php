@@ -151,3 +151,41 @@ class LTM_Menu_Walker extends Walker_Nav_Menu
     }
   }
 }
+
+// add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+
+/**
+ * Pagination for blog posts
+ *
+ */
+// Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
+function html5wp_pagination()
+{
+  global $wp_query;
+
+  $big = 999999999;
+
+  printf(
+    paginate_links(array(
+      'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+      'format' => '?paged=%#%',
+      'current' => max(1, get_query_var('paged')),
+      'total' => $wp_query->max_num_pages
+    ))
+  );
+}
+
+
+/**
+ * Pagination for blog posts
+ *
+ */
+// Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
+function git_blog_theme_pagination()
+{
+
+  $allowed_tags = [];
+  $args = [];
+
+  printf('<nav class="tailpress-pagination clear-both">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
+}
