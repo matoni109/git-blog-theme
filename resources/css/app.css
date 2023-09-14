@@ -4,4 +4,5 @@
 @import "tailwindcss/utilities";
 
 @import "custom.scss";
-@import "contact-from-7.scss"
+@import "contact-from-7.scss";
+@import "hamburger-classes.scss";

@@ -28,7 +28,6 @@
     "watch-sync": "cross-env NODE_ENV=development concurrently \"npm run browser-sync\" \"npm run watch\""
   },
   "devDependencies": {
-    "alpinejs": "^3.13.0",
     "@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
     "autoprefixer": "^10.4.13",
     "browser-sync": "^2.26.14",

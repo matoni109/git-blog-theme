@@ -48,14 +48,14 @@
 
             <div class="lg:hidden">
               <a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-                <button x-data="{ open: false }" x-on:click="open = !open" class="flex items-center space-x-2 focus:outline-none">
+                <button class="hamburger flex items-center space-x-2 focus:outline-none">
                   <span class="invisible">🔥</span>
                   <div class="w-6 flex items-center justify-center relative">
-                    <span x-bind:class="open ? 'translate-y-0 rotate-45' : '-translate-y-2'" class="transform transition w-full h-0.5 bg-current absolute"></span>
+                    <span class="line-1-closed transform transition w-full h-0.5 bg-current absolute"></span>
 
-                    <span x-bind:class="open ? 'opacity-0 translate-x-3' : 'opacity-100'" class="transform transition w-full h-0.5 bg-current absolute"></span>
+                    <span class="line-2-closed transform transition w-full h-0.5 bg-current absolute"></span>
 
-                    <span x-bind:class="open ? 'translate-y-0 -rotate-45' : 'translate-y-2'" class="transform transition w-full h-0.5 bg-current absolute"></span>
+                    <span class="line-3-closed transform transition w-full h-0.5 bg-current absolute"></span>
                   </div>
                 </button>
               </a>
