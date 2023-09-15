@@ -190,6 +190,10 @@ function git_blog_theme_pagination()
       'class' => [],
       'aria-current' => [],
     ],
+    'button' => [
+      'class' => [],
+      'id' => [],
+    ],
     'a' => [
       'class' => [],
       'href' => [],
@@ -197,9 +201,13 @@ function git_blog_theme_pagination()
   ];
 
   $args = [
-    'before_page_number' => '<span class="relative rounded-md inline-flex items-center mx-0.5 px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">',
+    'before_page_number' => '<span class="relative rounded-md inline-flex items-center mx-0.5 px-4 py-2 text-sm font-semibold text-gray-600 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">',
     'after_page_number' => '</span>',
-    'aria_current' => 'page'
+    'aria_current' => 'page',
+
+    'prev_text' => '<span class="rounded-md mx-0.5 px-4 py-2.5 font-semibold text-gray-400 hover:border-gray-300 hover:text-gray-700 text-xs md:text-small text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">Previous</span>',
+
+    'next_text' => '<span class="rounded-md mx-0.5 px-4 py-2.5 font-semibold text-gray-400 hover:border-gray-300 hover:text-gray-700 text-xs md:text-small text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">Next</span>'
   ];
 
   printf('<nav class="items-center justify-between -space-x-px " aria-label="Pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
