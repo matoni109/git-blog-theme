@@ -187,7 +187,8 @@ function git_blog_theme_pagination()
   // echo $allowed_html_tags;
   $allowed_tags = [
     'span' => [
-      'class' => []
+      'class' => [],
+      'aria-current' => [],
     ],
     'a' => [
       'class' => [],
@@ -196,9 +197,10 @@ function git_blog_theme_pagination()
   ];
 
   $args = [
-    'before_page_number' => '<span aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"></span>',
-    'after_page_number' => '<span></span>',
+    'before_page_number' => '<span class="relative rounded-md inline-flex items-center mx-0.5 px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">',
+    'after_page_number' => '</span>',
+    'aria_current' => 'page'
   ];
 
-  printf('<nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
+  printf('<nav class="items-center justify-between -space-x-px " aria-label="Pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
 }
