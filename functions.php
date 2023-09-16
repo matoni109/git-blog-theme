@@ -175,7 +175,6 @@ function html5wp_pagination()
   );
 }
 
-
 /**
  * Pagination for blog posts
  *
@@ -183,8 +182,6 @@ function html5wp_pagination()
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function git_blog_theme_pagination()
 {
-  // $allowed_html_tags = allowed_tags();
-  // echo $allowed_html_tags;
   $allowed_tags = [
     'span' => [
       'class' => [],
@@ -197,18 +194,34 @@ function git_blog_theme_pagination()
     'a' => [
       'class' => [],
       'href' => [],
+    ],
+    'svg' => [
+      'class' => [],
+      'href' => [],
+      'viewBox' => [],
+      'fill' => [],
+      'aria-hidden' => []
+    ],
+    'path' => [
+      'class' => [],
+      'href' => [],
+      'fill-rule' => [],
+      'd' => [],
+      'clip-rule' => []
     ]
   ];
 
   $args = [
-    'before_page_number' => '<span class="relative rounded-md inline-flex items-center mx-0.5 px-4 py-2 text-sm font-semibold text-gray-600 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">',
+    'before_page_number' => '<span class="hidden md:block relative rounded-md inline-flex items-center mx-0.5 px-4 py-2 font-semibold text-gray-600 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">',
+
     'after_page_number' => '</span>',
+
     'aria_current' => 'page',
 
-    'prev_text' => '<span class="rounded-md mx-0.5 px-4 py-2.5 font-semibold text-gray-400 hover:border-gray-300 hover:text-gray-700 text-xs md:text-small text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">Previous</span>',
+    'prev_text' => '<span class="md:hidden rounded-md mx-0.5 px-4 py-2 font-semibold text-gray-400 hover:border-gray-300 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">Previous</span><span class="hidden md:block inline-flex items-center rounded-md mx-0.5 px-3 py-2 font-semibold text-gray-400 hover:border-gray-300  ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0"><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg></span>',
 
-    'next_text' => '<span class="rounded-md mx-0.5 px-4 py-2.5 font-semibold text-gray-400 hover:border-gray-300 hover:text-gray-700 text-xs md:text-small text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">Next</span>'
+    'next_text' => '<span class="md:hidden rounded-md mx-0.5 px-4 py-2 font-semibold text-gray-400 hover:border-gray-300 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0">Next</span><span class="hidden md:block inline-flex items-center rounded-md mx-0.5 px-3 py-2 font-semibold text-gray-400 hover:border-gray-300 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0"><svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg></span>'
   ];
 
-  printf('<nav class="items-center justify-between -space-x-px " aria-label="Pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
+  printf('<nav class="flex justify-between md:flex-wrap md:items-center md:justify-center border-t border-gray-200 py-3 text-small" aria-label="Pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
 }
