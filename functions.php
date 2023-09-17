@@ -225,3 +225,88 @@ function git_blog_theme_pagination()
 
   printf('<nav class="flex justify-between md:flex-wrap md:items-center md:justify-center border-t border-gray-200 py-3 text-small" aria-label="Pagination">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
 }
+
+
+// Custom Excerpts
+function html5wp_index($length) // Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
+{
+  return 20;
+}
+
+// Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
+function html5wp_custom_post($length)
+{
+  return 40;
+}
+
+// Create the Custom Excerpts callback
+function html5wp_excerpt($length_callback = '', $more_callback = '')
+{
+  global $post;
+  if (function_exists($length_callback)) {
+    add_filter('excerpt_length', $length_callback);
+  }
+  if (function_exists($more_callback)) {
+    add_filter('excerpt_more', $more_callback);
+  }
+  $output = get_the_excerpt();
+  $output = apply_filters('wptexturize', $output);
+  $output = apply_filters('convert_chars', $output);
+  $output = '<p>' . $output . '</p>';
+  echo $output;
+}
+
+// Remove Admin bar
+function remove_admin_bar()
+{
+  return false;
+}
+
+// Custom View Article link to Post
+function html5_blank_view_article($more)
+{
+  global $post;
+  return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+}
+
+// Custom Gravatar in Settings > Discussion
+function html5blankgravatar($avatar_defaults)
+{
+  $myavatar = get_template_directory_uri() . '/img/gravatar.jpg';
+  $avatar_defaults[$myavatar] = "Custom Gravatar";
+  return $avatar_defaults;
+}
+
+// Remove invalid rel attribute values in the categorylist
+function remove_category_rel_from_category_list($thelist)
+{
+  return str_replace('rel="category tag"', 'rel="tag"', $thelist);
+}
+
+// Add page slug to body class, love this - Credit: Starkers Wordpress Theme
+function add_slug_to_body_class($classes)
+{
+  global $post;
+  if (is_home()) {
+    $key = array_search('blog', $classes);
+    if ($key > -1) {
+      unset($classes[$key]);
+    }
+  } elseif (is_page()) {
+    $classes[] = sanitize_html_class($post->post_name);
+  } elseif (is_singular()) {
+    $classes[] = sanitize_html_class($post->post_name);
+  }
+
+  return $classes;
+}
+
+// Add Filters
+add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
+add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
+add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove invalid rel attribute
+add_filter('excerpt_more', 'html5_blank_view_article'); // Add 'View Article' button instead of [...] for Excerpts
+add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+
+// Remove Filters
+// remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether

@@ -1384,6 +1384,17 @@ footer a:hover{
   z-index: 2;
 }
 
+/* footer search result term css */
+
+.text-gradient-purple-coral {
+  background: -webkit-linear-gradient(-70deg, #8250df 0%, #d42a32 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-box-decoration-break: clone;
+}
+
 /* credit below:
  https://www.velumi.com/guides/styling-contact-form-7-with-tailwind-sass/ */
 
