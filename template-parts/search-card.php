@@ -1,12 +1,14 @@
-          <article id="post-<?php the_ID(); ?>" <?php post_class('mb-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('mb-12'); ?>>
 
-            <header class="entry-header mb-4">
-              <?php the_title(sprintf('<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-              <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-sm text-gray-700"><?php echo get_the_date(); ?></time>
-            </header>
+  <header class="entry-header mb-4">
+    <?php the_post_thumbnail('large', ['class' => 'rounded object-center object-scale-down', 'alt' => get_the_title()]); ?>
+    <?php the_title(sprintf('<h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-3"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+  </header>
 
-            <div class="entry-summary">
-              <?php html5wp_excerpt('html5wp_custom_post'); ?>
-            </div>
+  <div class="entry-summary">
+    <?php html5wp_excerpt('html5wp_index'); ?>
+    <p class="text-small font-bold pt-2 capitalize"><?php the_author() ?></p>
+    <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="font-mono text-sm text-gray-700"><?php echo get_the_date(); ?></time>
+  </div>
 
-          </article>
+</article>

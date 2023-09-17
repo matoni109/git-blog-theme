@@ -74,10 +74,6 @@
   top: 1.5rem
 }
 
-.isolate {
-  isolation: isolate
-}
-
 .m-8 {
   margin: 2rem
 }
@@ -307,16 +303,14 @@
   justify-content: space-between
 }
 
-.-space-x-px > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(-1px * var(--tw-space-x-reverse));
-  margin-left: calc(-1px * calc(1 - var(--tw-space-x-reverse)))
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))
+}
+
+.overflow-hidden {
+  overflow: hidden
 }
 
 .rounded {
@@ -333,6 +327,10 @@
 
 .rounded-xl {
   border-radius: 0.75rem
+}
+
+.rounded-lg {
+  border-radius: 0.5rem
 }
 
 .border {
@@ -435,6 +433,11 @@
      object-fit: scale-down
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center
+}
+
 .p-4 {
   padding: 1rem
 }
@@ -462,11 +465,6 @@
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem
 }
 
 .py-16 {
@@ -504,6 +502,10 @@
   padding-bottom: 1.5rem
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem
+}
+
 .pb-4 {
   padding-bottom: 1rem
 }
@@ -518,6 +520,14 @@
 
 .pt-4 {
   padding-top: 1rem
+}
+
+.pt-2 {
+  padding-top: 0.5rem
+}
+
+.pt-3 {
+  padding-top: 0.75rem
 }
 
 .text-center {
@@ -656,16 +666,6 @@
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity))
-}
-
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity))
-}
-
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
@@ -797,11 +797,6 @@ body {
 
 .hover\:italic:hover {
   font-style: italic
-}
-
-.hover\:text-gray-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity))
 }
 
 .hover\:text-primary:hover {

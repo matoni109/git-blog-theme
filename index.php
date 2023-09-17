@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container mx-auto my-8">
-
+  <h3>index</h3>
   <?php if (have_posts()) : ?>
     <?php
     while (have_posts()) :
