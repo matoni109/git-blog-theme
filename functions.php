@@ -252,7 +252,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
   $output = get_the_excerpt();
   $output = apply_filters('wptexturize', $output);
   $output = apply_filters('convert_chars', $output);
-  $output = '<p>' . $output . '</p>';
+  $output = '<p class="flex flex-col text-gray-600">' . $output . '</p>';
   echo $output;
 }
 
@@ -266,7 +266,10 @@ function remove_admin_bar()
 function html5_blank_view_article($more)
 {
   global $post;
-  return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+
+  $args = '<button class="md:hidden rounded-md bg-white mt-2.5 px-3.5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Read More</button>';
+
+  return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __($args, 'tailpress') . '</a>';
 }
 
 // Custom Gravatar in Settings > Discussion

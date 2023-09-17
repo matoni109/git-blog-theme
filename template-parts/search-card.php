@@ -1,6 +1,6 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('mb-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('mb-4 md:mb-8'); ?>>
 
-  <header class="entry-header mb-4">
+  <header class="entry-header mb-1 py-4 border-t border-gray-200">
     <?php the_post_thumbnail('large', ['class' => 'rounded object-center object-scale-down', 'alt' => get_the_title()]); ?>
     <?php the_title(sprintf('<h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-3"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
   </header>
