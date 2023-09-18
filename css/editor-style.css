@@ -186,6 +186,10 @@
   display: inline-flex
 }
 
+.grid {
+  display: grid
+}
+
 .hidden {
   display: none
 }
@@ -270,6 +274,10 @@
   flex-basis: 50%
 }
 
+.basis-full {
+  flex-basis: 100%
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
@@ -285,6 +293,14 @@
 
 .list-none {
   list-style-type: none
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr))
 }
 
 .flex-row {
@@ -309,6 +325,19 @@
 
 .justify-between {
   justify-content: space-between
+}
+
+.gap-4 {
+  gap: 1rem
+}
+
+.gap-1 {
+  gap: 0.25rem
+}
+
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -591,6 +620,14 @@
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem
+}
+
+.text-xxxl {
+  font-size: 1.875rem
+}
+
+.text-xxl {
+  font-size: 1.5rem
 }
 
 .font-bold {
@@ -904,6 +941,18 @@ body {
     flex: 1 1 auto
   }
 
+  .md\:basis-1\/3 {
+    flex-basis: 33.333333%
+  }
+
+  .md\:basis-1\/2 {
+    flex-basis: 50%
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
   .md\:flex-row {
     flex-direction: row
   }
@@ -940,6 +989,16 @@ body {
   .md\:text-small {
     font-size: 0.875rem
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem
+  }
 }
 
 @media (min-width: 960px) {
@@ -957,6 +1016,14 @@ body {
 
   .lg\:hidden {
     display: none
+  }
+
+  .lg\:basis-1\/3 {
+    flex-basis: 33.333333%
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
   }
 
   .lg\:items-center {
