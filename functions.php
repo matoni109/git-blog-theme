@@ -322,7 +322,7 @@ add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Setti
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove invalid rel attribute
 add_filter('excerpt_more', 'html5_blank_view_article'); // Add 'View Article' button instead of [...] for Excerpts
-add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+// add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 
 // Remove Filters
 // remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
