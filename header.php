@@ -99,9 +99,9 @@
             'is_mobile_menu' => false,
           ));
           ?>
-          <?php get_template_part('searchform'); ?>
-        </div>
 
+        </div>
+        <?php get_template_part('searchform'); ?>
       </div>
     </header>
 
