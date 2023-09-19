@@ -1,17 +1,21 @@
 (() => {
   // resources/js/components/hamburger-menu.js
   var setupNavigationToggle = () => {
-    const main_navigation = document.querySelector("#primary-menu");
-    const main_navigation_button = document.querySelector("#primary-menu-button");
+    const mobile_list_menu = document.querySelector("#mobile-list-menu");
+    const mobile_menu = document.querySelector("#mobile-menu");
+    const mobile_contact_us_button = document.querySelector(
+      "#contact-us-mobile-button"
+    );
     const { classList: line1ClassList } = document.querySelector(".line-1-closed");
     const { classList: line2ClassList } = document.querySelector(".line-2-closed");
     const { classList: line3ClassList } = document.querySelector(".line-3-closed");
-    const primaryMenuToggle = document.querySelector("#primary-menu-toggle");
-    if (primaryMenuToggle) {
-      primaryMenuToggle.addEventListener("click", (e) => {
+    const hamburgerMenuToggle = document.querySelector("#hamburger-menu-toggle");
+    if (hamburgerMenuToggle) {
+      hamburgerMenuToggle.addEventListener("click", (e) => {
         e.preventDefault();
-        main_navigation.classList.toggle("hidden");
-        main_navigation_button.classList.toggle("hidden");
+        mobile_list_menu.classList.toggle("hidden");
+        mobile_contact_us_button.classList.toggle("hidden");
+        mobile_menu.classList.toggle("pb-3");
         line1ClassList.toggle("line-1-open");
         line1ClassList.toggle("line-1-closed");
         line2ClassList.toggle("line-2-open");
@@ -25,15 +29,14 @@
 
   // resources/js/components/header-search-form.js
   var setupSearchToggle = () => {
-    const main_search = document.querySelector("#primary-search-toggle");
+    const searchToggles = document.querySelectorAll(".primary-search-toggle");
     const main_search_form = document.querySelector("#header-search");
-    if (main_search) {
-      main_search.addEventListener("click", (e) => {
+    searchToggles.forEach((toggle) => {
+      toggle.addEventListener("click", (e) => {
         e.preventDefault();
         main_search_form.classList.toggle("hidden");
-        console.info("clicked search");
       });
-    }
+    });
   };
   window.addEventListener("load", setupSearchToggle);
 })();

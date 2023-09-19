@@ -1,6 +1,9 @@
 const setupNavigationToggle = () => {
-  const main_navigation = document.querySelector("#primary-menu");
-  const main_navigation_button = document.querySelector("#primary-menu-button");
+  const mobile_list_menu = document.querySelector("#mobile-list-menu");
+  const mobile_menu = document.querySelector("#mobile-menu");
+  const mobile_contact_us_button = document.querySelector(
+    "#contact-us-mobile-button"
+  );
 
   const { classList: line1ClassList } =
     document.querySelector(".line-1-closed");
@@ -9,13 +12,14 @@ const setupNavigationToggle = () => {
   const { classList: line3ClassList } =
     document.querySelector(".line-3-closed");
 
-  const primaryMenuToggle = document.querySelector("#primary-menu-toggle");
+  const hamburgerMenuToggle = document.querySelector("#hamburger-menu-toggle");
 
-  if (primaryMenuToggle) {
-    primaryMenuToggle.addEventListener("click", (e) => {
+  if (hamburgerMenuToggle) {
+    hamburgerMenuToggle.addEventListener("click", (e) => {
       e.preventDefault();
-      main_navigation.classList.toggle("hidden");
-      main_navigation_button.classList.toggle("hidden");
+      mobile_list_menu.classList.toggle("hidden");
+      mobile_contact_us_button.classList.toggle("hidden");
+      mobile_menu.classList.toggle("pb-3");
 
       // Toggle the classes for hamburger
       line1ClassList.toggle("line-1-open");

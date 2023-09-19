@@ -1,4 +1,4 @@
-<!-- search -->
+<!-- search form -->
 <div id="header-search" class="hidden z-40 bg-white header-search js-header-search rounded absolute right-0">
   <form id="search-form" class="search my-0.5 p-4" role="search" method="get" action="<?php echo esc_url(home_url()); ?>">
     <span class="sr-only"><?php echo _x('Search for:', 'lable', 'tailpress'); ?></span>
@@ -13,4 +13,4 @@
     </div>
   </form>
 </div>
-<!-- /search -->
+<!-- /search form-->
