@@ -24,5 +24,16 @@
   window.addEventListener("load", setupNavigationToggle);
 
   // resources/js/components/header-search-form.js
-  console.info("hello console");
+  var setupSearchToggle = () => {
+    const main_search = document.querySelector("#primary-search-toggle");
+    const main_search_form = document.querySelector("#header-search");
+    if (main_search) {
+      main_search.addEventListener("click", (e) => {
+        e.preventDefault();
+        main_search_form.classList.toggle("hidden");
+        console.info("clicked search");
+      });
+    }
+  };
+  window.addEventListener("load", setupSearchToggle);
 })();
