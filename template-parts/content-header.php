@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Template for content header
+ * Component for category and tags output
  *
- * To be used inside the Wordpress The Loop
+ * To be used inside cards
  *
  */
 

@@ -101,7 +101,7 @@
           ?>
 
         </div>
-        <?php get_template_part('searchform'); ?>
+        <?php get_search_form(); ?>
       </div>
     </header>
 

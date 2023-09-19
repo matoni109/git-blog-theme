@@ -435,6 +435,10 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+.bg-inherit {
+  background-color: inherit
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops))
 }
@@ -922,6 +926,10 @@ body {
 
 .focus\:outline-offset-0:focus {
   outline-offset: 0px
+}
+
+.focus\:outline-blue-600:focus {
+  outline-color: #2563eb
 }
 
 .focus\:ring:focus {
