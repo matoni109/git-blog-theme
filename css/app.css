@@ -1151,6 +1151,10 @@ video {
   padding-top: 1rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1246,6 +1250,10 @@ video {
   letter-spacing: -0.025em;
 }
 
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1294,6 +1302,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-inherit{
+  color: inherit;
 }
 
 .antialiased{
@@ -1981,6 +1993,10 @@ footer a:hover{
 
   .md\:text-small{
     font-size: 0.875rem;
+  }
+
+  .md\:tracking-wide{
+    letter-spacing: 0.025em;
   }
 
   .group:hover .md\:group-hover\:block{

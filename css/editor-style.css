@@ -54,10 +54,6 @@
   visibility: hidden
 }
 
-.static {
-  position: static
-}
-
 .absolute {
   position: absolute
 }
@@ -76,30 +72,6 @@
 
 .top-6 {
   top: 1.5rem
-}
-
-.top-0 {
-  top: 0px
-}
-
-.right-\[3px\] {
-  right: 3px
-}
-
-.right-\[10px\] {
-  right: 10px
-}
-
-.right-\[100px\] {
-  right: 100px
-}
-
-.right-\[50px\] {
-  right: 50px
-}
-
-.right-\[45px\] {
-  right: 45px
 }
 
 .z-40 {
@@ -262,10 +234,6 @@
   height: 2rem
 }
 
-.h-full {
-  height: 100%
-}
-
 .min-h-screen {
   min-height: 100vh
 }
@@ -387,12 +355,6 @@
   gap: 1rem
 }
 
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -405,16 +367,16 @@
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
-.space-x-7 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)))
-}
-
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))
+}
+
+.space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)))
 }
 
 .rounded {
@@ -651,6 +613,10 @@
   padding-top: 1rem
 }
 
+.text-left {
+  text-align: left
+}
+
 .text-center {
   text-align: center
 }
@@ -746,6 +712,10 @@
   letter-spacing: -0.025em
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity))
@@ -796,6 +766,10 @@
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
+.text-inherit {
+  color: inherit
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
@@ -828,12 +802,6 @@
 .ring-1 {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
-}
-
-.ring-2 {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
 }
 
@@ -939,10 +907,6 @@ body {
   max-width: 100%
 }
 
-.hover\:absolute:hover {
-  position: absolute
-}
-
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity))
@@ -993,19 +957,9 @@ body {
   --tw-ring-inset: inset
 }
 
-.hover\:ring-black:hover {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity))
-}
-
 .hover\:ring-gray-950:hover {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(3 7 18 / var(--tw-ring-opacity))
-}
-
-.hover\:drop-shadow:hover {
-  --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
 .hover\:drop-shadow-sm:hover {
@@ -1056,14 +1010,6 @@ body {
 }
 
 @media (min-width: 782px) {
-  .md\:right-\[45px\] {
-    right: 45px
-  }
-
-  .md\:right-\[30px\] {
-    right: 30px
-  }
-
   .md\:right-\[15px\] {
     right: 15px
   }
@@ -1173,34 +1119,22 @@ body {
     font-size: 0.875rem
   }
 
+  .md\:tracking-wide {
+    letter-spacing: 0.025em
+  }
+
   .group:hover .md\:group-hover\:block {
     display: block
   }
 }
 
 @media (min-width: 960px) {
-  .lg\:right-\[45px\] {
-    right: 45px
-  }
-
-  .lg\:block {
-    display: block
-  }
-
   .lg\:inline {
     display: inline
   }
 
-  .lg\:hidden {
-    display: none
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-
-  .lg\:bg-transparent {
-    background-color: transparent
   }
 
   .lg\:pl-4 {
@@ -1224,9 +1158,5 @@ body {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem
-  }
-
-  .group:hover .lg\:group-hover\:block {
-    display: block
   }
 }

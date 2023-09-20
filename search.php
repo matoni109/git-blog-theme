@@ -18,12 +18,10 @@
       <!-- /results return -->
 
       <main role="main">
-
-        <!-- search-items-section -->
         <section>
-          <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <?php if (have_posts()) : ?>
-
+          <!-- search-items-section -->
+          <?php if (have_posts()) : ?>
+            <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <?php
               while (have_posts()) :
                 the_post(); ?>
@@ -32,14 +30,13 @@
                   ?>
                 </span>
               <?php endwhile; ?>
-          </span>
-          <?php get_template_part('pagination'); ?>
-        <?php else : ?>
-          <?php get_template_part('searchform'); ?>
-        <?php endif; ?>
-
+            </span>
+            <!-- /search-items-section -->
+            <?php get_template_part('pagination'); ?>
+          <?php else : ?>
+            <span class="text-left md:tracking-wide text-inherit">Sorry, but nothing matched your search terms. Please try again with some different keywords.</span>
+          <?php endif; ?>
         </section>
-        <!-- /search-items-section -->
       </main>
     </div>
   </div>
