@@ -1,5 +1,4 @@
 <header class="page-header">
-
   <div class="">
     <div id="archive-type" class="mb-6 pb-3">
       <?php
