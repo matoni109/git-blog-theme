@@ -660,6 +660,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -726,6 +731,24 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.line-clamp-3{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .block{

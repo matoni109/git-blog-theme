@@ -316,6 +316,29 @@ function wpdocs_post_image_html($html, $post_id, $post_image_id)
   $html = '<a href="' . get_permalink($post_id) . '" alt="' . esc_attr(get_the_title($post_id)) . '">' . $html . '</a>';
   return $html;
 }
+
+/**
+ * Get the current archive post type name (e.g: post, page, product).
+ *
+ * @return String of Archive Type.
+ */
+function print_archive_page_type()
+{
+  if (is_category()) {
+    return "Category";
+  } elseif (is_tag()) {
+    return "Tag";
+  } elseif (is_date()) {
+    return "Date";
+  } elseif (is_author()) {
+    return "Author";
+  } elseif (is_post_type_archive()) {
+    return "Custom Post";
+  } else {
+    return "Other Archive";
+  }
+}
+
 add_filter('post_thumbnail_html', 'wpdocs_post_image_html', 10, 3);
 // Add Filters
 add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
