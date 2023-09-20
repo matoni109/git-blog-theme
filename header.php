@@ -26,7 +26,7 @@
     </div>
     <!-- Navbar goes here -->
     <nav class="border-b">
-      <div class="mx-auto container px-4">
+      <div class="mx-auto container px-4 relative">
         <div class="flex items-center justify-between">
           <div class="flex grow items-center justify-between space-x-7 py-4 md:py-6">
             <div class="flex items-center px-2">

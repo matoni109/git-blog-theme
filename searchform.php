@@ -1,5 +1,5 @@
 <!-- search form -->
-<div id="header-search" class="hidden z-40 bg-white header-search js-header-search rounded absolute right-0">
+<div id="header-search" class="hidden z-40 bg-white header-search js-header-search rounded absolute right-0 md:right-[15px]">
   <form id="search-form" class="search my-0.5 p-4" role="search" method="get" action="<?php echo esc_url(home_url()); ?>">
     <span class="sr-only"><?php echo _x('Search for:', 'lable', 'tailpress'); ?></span>
     <div class="flex flex-row flex-items-center">
