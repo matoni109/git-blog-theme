@@ -1,6 +1,6 @@
 <article <?php post_class(); ?>>
   <header>
-    <?php the_post_thumbnail('large', ['class' => 'rounded object-center object-scale-down', 'alt' => get_the_title()]); ?>
+    <?php the_post_thumbnail('large', ['class' => 'rounded object-center object-scale-down', 'alt' => get_the_title(), 'loading' => 'lazy']); ?>
     <a href="<?php the_permalink(); ?>">
       <h2 class="text-4xl my-8 font-medium"><?php the_title(); ?></h2>
     </a>

@@ -9,7 +9,16 @@
         <section>
           <!-- archive-items-section -->
           <?php if (have_posts()) : ?>
+
+            <!-- single archive-item-->
+            <?php git_blog_theme_posts_from_loop(1, function () {
+
+              get_template_part('template-parts/search-card');
+            }); ?>
+
+
             <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
               <?php
               while (have_posts()) :
                 the_post(); ?>

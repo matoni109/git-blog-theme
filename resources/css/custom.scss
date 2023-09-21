@@ -86,3 +86,18 @@ z-index: 2;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-box-decoration-break: clone;
 }
+
+
+/* dancing thumbnale index cards */
+.tease-thumbnail:hover ,
+.tease-thumbnail:focus {
+  transform: scale(1.02) translate3d(0, 0, 0);
+}
+
+.tease-thumbnail__img {
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: scale(1) translate3d(0, 0, 0);
+  transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+}
