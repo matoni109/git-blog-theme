@@ -11,16 +11,23 @@
     <?php html5wp_excerpt('html5wp_custom_post'); ?>
 
     <div class="flex items-center pt-2">
-
-      <?php echo get_avatar(get_the_author_meta("ID"), 30, null, null, array('class' => 'rounded-full mr-4')); ?>
+      <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+        <?php
+        echo get_avatar(get_the_author_meta("ID"), 30, null, null, ['class' => 'rounded-full mr-4', 'loading' => 'lazy']);
+        ?>
+      </a>
 
       <span class="flex flex-col pt-2">
-        <p class="text-small font-bold capitalize"><?php the_author() ?></p>
+        <p class="text-small font-bold capitalize">
+          <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+            <?php the_author() ?>
+          </a>
+        </p>
 
-        <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="font-mono text-sm text-gray-700"><?php echo get_the_date(); ?>
+        <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="font-mono text-sm text-gray-700">
+          <?php echo get_the_date(); ?>
         </time>
       </span>
-
     </div>
 
   </div>

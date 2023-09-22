@@ -49,7 +49,7 @@ $avatar       = get_avatar(get_the_author_meta("ID"), 30, null, null,  ['class' 
   <?php
   // If a user has filled out their description, show a bio on their entries.
   if (get_the_author_meta('description')) : ?>
-    <div id="author-description" class="mb-8">
+    <div id="author-description" class="mb-8 mt-3 lg:mt-6">
       <p class="text-left break-words indent-8"><?php echo nl2br(get_the_author_meta('description')); ?></p>
     </div>
   <?php endif; ?>

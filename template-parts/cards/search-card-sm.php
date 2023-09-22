@@ -10,9 +10,9 @@
     <?php the_title(sprintf('<h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
 
     <?php html5wp_excerpt('html5wp_index'); ?>
-
-    <p class="text-small font-bold pt-2 capitalize"><?php the_author() ?></p>
-
+    <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+      <p class="text-small font-bold pt-2 capitalize"><?php the_author() ?></p>
+    </a>
     <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="font-mono text-sm text-gray-700"><?php echo get_the_date(); ?>
     </time>
   </div>

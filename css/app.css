@@ -757,6 +757,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
@@ -2216,6 +2220,10 @@ footer a:hover{
 
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-6{
+    margin-top: 1.5rem;
   }
 
   .lg\:inline{
