@@ -101,3 +101,13 @@ z-index: 2;
   transform: scale(1) translate3d(0, 0, 0);
   transition: transform .6s cubic-bezier(.165, .84, .44, 1);
 }
+
+/* post tags before */
+.post-tags::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 4px;
+}

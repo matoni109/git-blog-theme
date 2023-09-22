@@ -10,7 +10,7 @@
     ?>
 
       <?php get_template_part('template-parts/content', 'single');
-
+      get_template_part('/template-parts/components/post-tags-getter');
       get_template_part('pagination');
       ?>
 

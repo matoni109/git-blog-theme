@@ -12,4 +12,5 @@
     <p class="capitalize"><?php the_author() ?></p>
 
   </div>
+
 </article>
