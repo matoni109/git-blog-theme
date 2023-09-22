@@ -122,11 +122,6 @@
   margin-bottom: 2rem
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem
-}
-
 .mb-1 {
   margin-bottom: 0.25rem
 }
@@ -195,22 +190,11 @@
   margin-top: 1.5rem
 }
 
-.mt-3 {
-  margin-top: 0.75rem
-}
-
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3
-}
-
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2
 }
 
 .block {
@@ -517,6 +501,11 @@
   fill: #6b7280
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover
+}
+
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down
@@ -774,6 +763,10 @@
   color: rgb(17 24 39 / var(--tw-text-opacity))
 }
 
+.text-inherit {
+  color: inherit
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity))
@@ -787,10 +780,6 @@
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-
-.text-inherit {
-  color: inherit
 }
 
 .antialiased {

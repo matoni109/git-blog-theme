@@ -660,11 +660,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -733,22 +728,11 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
 .line-clamp-3{
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-}
-
-.line-clamp-2{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .block{
@@ -1055,6 +1039,11 @@ video {
   fill: #6b7280;
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-scale-down{
   -o-object-fit: scale-down;
      object-fit: scale-down;
@@ -1312,6 +1301,10 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-inherit{
+  color: inherit;
+}
+
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
@@ -1325,10 +1318,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-inherit{
-  color: inherit;
 }
 
 .antialiased{
@@ -1544,6 +1533,21 @@ footer a:hover{
   background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-box-decoration-break: clone;
+}
+
+/* dancing thumbnale index cards */
+
+.tease-thumbnail:hover ,
+.tease-thumbnail:focus {
+  transform: scale(1.02) translate3d(0, 0, 0);
+}
+
+.tease-thumbnail__img {
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: scale(1) translate3d(0, 0, 0);
+  transition: transform .6s cubic-bezier(.165, .84, .44, 1);
 }
 
 /* credit below:
