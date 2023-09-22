@@ -620,6 +620,10 @@ video {
   margin: 2rem;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .mx-0{
   margin-left: 0px;
   margin-right: 0px;
@@ -658,6 +662,11 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-1{
@@ -872,6 +881,10 @@ video {
   flex-direction: row;
 }
 
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -900,6 +913,10 @@ video {
   gap: 1rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -922,6 +939,15 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.75rem * var(--tw-space-x-reverse));
   margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.break-normal{
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.break-words{
+  overflow-wrap: break-word;
 }
 
 .rounded{
@@ -1910,6 +1936,10 @@ footer a:hover{
   .sm\:w-auto{
     width: auto;
   }
+
+  .sm\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
 }
 
 @media (min-width: 782px){
@@ -1927,6 +1957,11 @@ footer a:hover{
     margin-bottom: 1.5rem;
   }
 
+  .md\:mx-2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .md\:mb-2{
     margin-bottom: 0.5rem;
   }
@@ -1937,6 +1972,14 @@ footer a:hover{
 
   .md\:ml-0{
     margin-left: 0px;
+  }
+
+  .md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
+  .md\:mb-3{
+    margin-bottom: 0.75rem;
   }
 
   .md\:block{
@@ -2000,12 +2043,26 @@ footer a:hover{
     padding-bottom: 1.5rem;
   }
 
+  .md\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .md\:pl-4{
     padding-left: 1rem;
   }
 
   .md\:pr-0{
     padding-right: 0px;
+  }
+
+  .md\:pb-1{
+    padding-bottom: 0.25rem;
   }
 
   .md\:text-3xl{
@@ -2032,12 +2089,22 @@ footer a:hover{
 }
 
 @media (min-width: 960px){
+  .lg\:mx-2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .lg\:inline{
     display: inline;
   }
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .lg\:pl-4{

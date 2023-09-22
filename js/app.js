@@ -39,23 +39,4 @@
     });
   };
   window.addEventListener("load", setupSearchToggle);
-
-  // resources/js/components/responsive-grid-elements.js
-  var setLayout = () => {
-    const gridElements = document.querySelectorAll(".dynamic-layout");
-    if (gridElements) {
-      gridElements.forEach((gridElement) => {
-        const columnWidth = gridElement.clientWidth / 2;
-        if (columnWidth < 300) {
-          gridElement.classList.add("flex-col");
-          gridElement.classList.remove("md:flex-row-reverse");
-        } else {
-          gridElement.classList.remove("flex-col");
-          gridElement.classList.add("md:flex-row-reverse");
-        }
-      });
-    }
-  };
-  window.addEventListener("load", setLayout);
-  window.addEventListener("resize", setLayout);
 })();

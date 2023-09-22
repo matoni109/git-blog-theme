@@ -18,7 +18,7 @@
             while (have_posts()) :
               the_post(); ?>
               <span class="search-item">
-                <?php get_template_part('template-parts/search-card')
+                <?php get_template_part('template-parts/cards/search-card-sm')
                 ?>
               </span>
             <?php endwhile; ?>

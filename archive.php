@@ -13,7 +13,7 @@
             <!-- single archive-item-->
             <?php git_blog_theme_posts_from_loop(1, function () {
 
-              get_template_part('template-parts/search-card');
+              get_template_part('template-parts/cards/archive-card', 'lg');
             }); ?>
 
 
@@ -23,7 +23,7 @@
               while (have_posts()) :
                 the_post(); ?>
                 <span class="search-item">
-                  <?php get_template_part('template-parts/search-card')
+                  <?php get_template_part('template-parts/cards/archive-card', 'sm')
                   ?>
                 </span>
               <?php endwhile; ?>

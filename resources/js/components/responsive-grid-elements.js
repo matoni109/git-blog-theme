@@ -1,6 +1,8 @@
 // Tailwind break-points don't work inside a grid
 // this function to check and apply the layout
 // based on column width
+// replace flex-col md:flex-row-reverse with dynamic-layout
+// i ended up taking this out and just using *-card-sm / *-card-lg
 
 const setLayout = () => {
   const gridElements = document.querySelectorAll(".dynamic-layout");

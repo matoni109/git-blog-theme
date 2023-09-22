@@ -1,7 +1,7 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('dynamic-layout flex py-6 border-t border-gray-200 md:mb-8'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('flex flex-row-reverse py-6 border-t border-gray-200 md:mb-8'); ?>>
 
   <header class="entry-header">
-    <?php the_post_thumbnail('large', ['class' => 'rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img', 'alt' => get_the_title()]); ?>
+    <?php the_post_thumbnail('large', ['class' => 'rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img', 'alt' => get_the_title(), 'loading' => 'lazy']); ?>
   </header>
 
   <div class="entry-summary">

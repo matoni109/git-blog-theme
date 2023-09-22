@@ -26,7 +26,7 @@
     </div>
 
     <!-- Navbar goes here -->
-    <?php get_template_part('template-parts/navigation-bar') ?>
+    <?php get_template_part('template-parts/navigation/navigation-bar') ?>
 
     <div id="content" class="site-content flex-grow">
 

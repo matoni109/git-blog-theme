@@ -252,7 +252,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
   $output = get_the_excerpt();
   $output = apply_filters('wptexturize', $output);
   $output = apply_filters('convert_chars', $output);
-  $output = '<p class="flex flex-col text-gray-600">' . $output . '</p>';
+  $output = '<p class="flex flex-col text-gray-600 break-words">' . $output . '</p>';
   echo $output;
 }
 
