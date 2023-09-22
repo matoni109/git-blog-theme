@@ -13,7 +13,6 @@ $tags = get_tags(array(
   'hide_empty' => true
 ));
 
-
 if (wp_get_post_terms($post->ID, 'post_tag', ['fields' => 'ids'])) {
 
 ?>
@@ -23,7 +22,6 @@ if (wp_get_post_terms($post->ID, 'post_tag', ['fields' => 'ids'])) {
       <!-- tags -->
       <ul class="flex flex-wrap inline-block shrink list-none text-primary mt-2 mb-0 ml-4">
         <?php
-        $tags = get_the_tags(); // Get tags for the current post
 
         if ($tags) {
           $tag_names = array();
