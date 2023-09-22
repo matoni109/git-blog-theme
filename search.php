@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Search Page template file.
+ *
+ */
+
+get_header();
+
+?>
+
 <div class="container mx-auto my-8">
   <div class="mx-auto">
     <div class="px-4">
@@ -34,4 +44,4 @@
     </div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_footer();

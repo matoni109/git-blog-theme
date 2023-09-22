@@ -1,11 +1,12 @@
 <?php
 
 /**
- * Archive Page template file.
+ * Author Archive Page template file.
  *
  */
 
 get_header();
+$author = get_queried_object();
 
 ?>
 
@@ -14,7 +15,8 @@ get_header();
     <div class="px-4">
       <!-- archive header -->
 
-      <?php get_template_part('template-parts/archive-header') ?>
+      <?php get_template_part('template-parts/author/author-header') ?>
+
       <main role="main">
         <section>
           <!-- archive-items-section -->
