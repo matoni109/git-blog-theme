@@ -6,7 +6,7 @@
  * Also takes $args to include or remove content
  *
  */
-// Set defaults.
+// https://make.wordpress.org/core/2020/07/17/passing-arguments-to-template-files-in-wordpress-5-5/
 
 $args = wp_parse_args(
   $args,
@@ -35,18 +35,23 @@ $type = $args['type'];
     <?php html5wp_excerpt('html5wp_custom_post'); ?>
 
     <div class="flex items-center pt-2">
-      <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
-        <?php
-        echo get_avatar(get_the_author_meta("ID"), 30, null, null, ['class' => 'rounded-full mr-4', 'loading' => 'lazy']);
-        ?>
-      </a>
+
+      <?php if ($type != "author") : ?>
+        <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+          <?php echo get_avatar(get_the_author_meta("ID"), 30, null, null, ['class' => 'rounded-full mr-4', 'loading' => 'lazy']);
+          ?>
+        </a>
+      <?php endif; ?>
 
       <span class="flex flex-col pt-2">
-        <p class="text-small font-bold capitalize">
-          <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
-            <?php the_author() ?>
-          </a>
-        </p>
+
+        <?php if ($type != "author") : ?>
+          <p class="text-small font-bold capitalize">
+            <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+              <?php the_author() ?>
+            </a>
+          </p>
+        <?php endif; ?>
 
         <time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="font-mono text-sm text-gray-700">
           <?php echo get_the_date(); ?>

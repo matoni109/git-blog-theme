@@ -6,7 +6,7 @@
  * Also takes $args to include or remove content
  *
  */
-// Set defaults.
+// https://make.wordpress.org/core/2020/07/17/passing-arguments-to-template-files-in-wordpress-5-5/
 
 $args = wp_parse_args(
   $args,
