@@ -1,3 +1,23 @@
+<?php
+
+/**
+ * Dynamic Large Card.
+ *
+ * Also takes $args to include or remove content
+ *
+ */
+// Set defaults.
+
+$args = wp_parse_args(
+  $args,
+  array(
+    'type' => ''
+  )
+);
+$type = $args['type'];
+
+?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('flex flex-col md:flex-row-reverse p-2 py-6 border-t border-gray-200 md:mb-2'); ?>>
 
   <header class="entry-header basis-1/2 pb-3 md:pb-1 lg:px-3">
@@ -5,6 +25,10 @@
   </header>
 
   <div class="entry-summary md:px-3 basis-1/2">
+
+    <?php if ($type != "archive") : ?>
+      <?php get_template_part('template-parts/components/card-tags-category-getter'); ?>
+    <?php endif; ?>
 
     <?php the_title(sprintf('<h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
 

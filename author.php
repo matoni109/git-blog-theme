@@ -25,17 +25,18 @@ $author = get_queried_object();
             <!-- single archive-item-->
             <?php git_blog_theme_posts_from_loop(1, function () {
 
-              get_template_part('template-parts/cards/archive-card', 'lg');
+              get_template_part('template-parts/cards/main-card', 'lg', ['type' => 'author']);
             }); ?>
 
 
             <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
               <?php
+              rewind_posts();
               while (have_posts()) :
                 the_post(); ?>
                 <span class="search-item">
-                  <?php get_template_part('template-parts/cards/archive-card', 'sm')
+                  <?php get_template_part('template-parts/cards/main-card', 'sm', ['type' => 'author']);
                   ?>
                 </span>
               <?php endwhile; ?>

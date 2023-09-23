@@ -7,12 +7,12 @@
       <h3>index</h3>
       <!-- index-items-section -->
       <?php if (have_posts()) : ?>
-        <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <span class="index-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <?php
           while (have_posts()) :
             the_post();
           ?>
-            <span class="search-item">
+            <span class="index-item">
               <?php get_template_part('template-parts/content', get_post_format()); ?>
             </span>
           <?php endwhile; ?>

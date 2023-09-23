@@ -18,7 +18,7 @@ get_header();
      -->
 
       <!-- results header -->
-      <?php get_template_part('template-parts/search-header') ?>
+      <?php get_template_part('template-parts/search/search-header') ?>
 
       <main role="main">
         <section>
@@ -29,7 +29,7 @@ get_header();
               while (have_posts()) :
                 the_post(); ?>
                 <span class="search-item">
-                  <?php get_template_part('template-parts/cards/search-card-sm')
+                  <?php get_template_part('template-parts/cards/main-card', 'sm', ['type' => 'search'])
                   ?>
                 </span>
               <?php endwhile; ?>

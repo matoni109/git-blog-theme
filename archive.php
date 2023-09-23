@@ -14,7 +14,7 @@ get_header();
     <div class="px-4">
       <!-- archive header -->
 
-      <?php get_template_part('template-parts/archive-header') ?>
+      <?php get_template_part('template-parts/archive/archive-header') ?>
       <main role="main">
         <section>
           <!-- archive-items-section -->
@@ -23,7 +23,7 @@ get_header();
             <!-- single archive-item-->
             <?php git_blog_theme_posts_from_loop(1, function () {
 
-              get_template_part('template-parts/cards/archive-card', 'lg');
+              get_template_part('template-parts/cards/main-card', 'lg', ['type' => 'archive']);
             }); ?>
 
 
@@ -33,7 +33,7 @@ get_header();
               while (have_posts()) :
                 the_post(); ?>
                 <span class="search-item">
-                  <?php get_template_part('template-parts/cards/archive-card', 'sm')
+                  <?php get_template_part('template-parts/cards/main-card', 'sm', ['type' => 'archive'])
                   ?>
                 </span>
               <?php endwhile; ?>
