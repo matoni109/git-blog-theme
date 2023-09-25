@@ -32,7 +32,6 @@ $author = get_queried_object();
             <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
               <?php
-              rewind_posts();
               while (have_posts()) :
                 the_post(); ?>
                 <span class="search-item">
