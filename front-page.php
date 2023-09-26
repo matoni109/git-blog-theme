@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container mx-auto my-8">
-
+  <h3>front page</h3>
   <?php if (have_posts()) : ?>
 
     <div class="max-w-screen-lg mx-auto">

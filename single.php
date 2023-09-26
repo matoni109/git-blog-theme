@@ -1,7 +1,25 @@
+<?php
+
+/**
+ * Dynamic single page.
+ *
+ * Also takes $args to include or remove content
+ *
+ */
+
+$args = wp_parse_args(
+  $args,
+  array(
+    'type' => ''
+  )
+);
+$type = $args['type'];
+
+?>
 <?php get_header(); ?>
 
 <div class="container my-8 mx-auto">
-
+  <h3>single php</h3>
   <?php if (have_posts()) : ?>
 
     <?php
