@@ -1,5 +1,5 @@
 <!-- single page -->
-<div class="pagination">
+<div class="single-page">
   <?php
   get_template_part('single', null, ['type' => 'single-page'])
   ?>
