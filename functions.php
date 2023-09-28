@@ -405,7 +405,17 @@ function gravatar_alt($text)
   return $text;
 }
 
+//Alter the WordPress search to return ONLY posts, no pages
+function search_filter_posts($query)
+{
+  if ($query->is_search) {
+    $query->set('post_type', 'post');
+  }
+  return $query;
+}
+
 // Add Filters
+add_filter('pre_get_posts', 'search_filter_posts');
 add_filter('get_avatar', 'gravatar_alt');
 add_filter('post_thumbnail_html', 'wpdocs_post_image_html', 10, 3);
 add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
