@@ -616,6 +616,10 @@ video {
   z-index: 40;
 }
 
+.col-span-12{
+  grid-column: span 12 / span 12;
+}
+
 .m-8{
   margin: 2rem;
 }
@@ -808,6 +812,10 @@ video {
   height: 2rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -977,6 +985,10 @@ video {
   margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.self-end{
+  align-self: flex-end;
+}
+
 .break-words{
   overflow-wrap: break-word;
 }
@@ -1001,12 +1013,20 @@ video {
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-l{
+  border-left-width: 1px;
 }
 
 .border-gray-200{
@@ -1021,6 +1041,11 @@ video {
 
 .border-transparent{
   border-color: transparent;
+}
+
+.border-indigo-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
 }
 
 .bg-current{
@@ -1184,6 +1209,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1224,12 +1254,24 @@ video {
   padding-top: 1rem;
 }
 
+.pb-1{
+  padding-bottom: 0.25rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
 .text-left{
   text-align: left;
 }
 
 .text-center{
   text-align: center;
+}
+
+.text-end{
+  text-align: end;
 }
 
 .indent-8{
@@ -1383,6 +1425,16 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .antialiased{
@@ -1923,6 +1975,10 @@ footer a:hover{
   text-decoration-line: underline;
 }
 
+.hover\:underline-offset-2:hover{
+  text-underline-offset: 2px;
+}
+
 .hover\:ring-0:hover{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2128,12 +2184,24 @@ footer a:hover{
 }
 
 @media (min-width: 960px){
+  .lg\:col-span-10{
+    grid-column: span 10 / span 10;
+  }
+
+  .lg\:col-start-2{
+    grid-column-start: 2;
+  }
+
   .lg\:mb-0{
     margin-bottom: 0px;
   }
 
   .lg\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .lg\:mr-5{
+    margin-right: 1.25rem;
   }
 
   .lg\:inline{

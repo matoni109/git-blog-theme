@@ -394,8 +394,20 @@ function aquila_has_gravatar($user_email)
   return preg_match("|200|", $headers[0]);
 }
 
-add_filter('post_thumbnail_html', 'wpdocs_post_image_html', 10, 3);
+/**
+ * Gravatar Alt Fix
+ * https://wphelper.io/fix-missing-gravatar-alt-tag-value/
+ */
+function gravatar_alt($text)
+{
+  $alt = get_the_author_meta('display_name');
+  $text = str_replace('alt=\'\'', 'alt=\'Avatar for ' . $alt . '\' title=\'Gravatar for ' . $alt . '\'', $text);
+  return $text;
+}
+
 // Add Filters
+add_filter('get_avatar', 'gravatar_alt');
+add_filter('post_thumbnail_html', 'wpdocs_post_image_html', 10, 3);
 add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove invalid rel attribute

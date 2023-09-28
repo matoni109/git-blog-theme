@@ -8,7 +8,7 @@
 
 $author_email = get_the_author_meta('user_email');
 $has_avatar   = aquila_has_gravatar($author_email);
-$avatar       = get_avatar(get_the_author_meta("ID"), 30, null, null,  ['class'   => 'w-24 h-24 rounded-full', 'alt' => get_the_author(), 'loading' => 'lazy']);
+$avatar       = get_avatar(get_the_author_meta("ID"), 30, null, null,  ['class'   => 'w-24 h-24 rounded-full', 'loading' => 'lazy']);
 
 ?>
 <header class="page-header mb-4">
