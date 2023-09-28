@@ -3,7 +3,7 @@
 /**
  * Component for category and tags output
  *
- * To be used inside cards
+ * Dynamic component to decorate categories and tags
  */
 
 // Check if $args is defined, and if not, initialize it as an empty array.
