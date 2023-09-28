@@ -3,7 +3,9 @@
   <?php get_template_part('template-parts/content/content-header', 'single') ?>
 
   <div class="entry-content">
-    <?php the_content(); ?>
+    <?php the_content();
+
+    get_template_part('/template-parts/components/post-tags-getter'); ?>
 
     <?php
     wp_link_pages(

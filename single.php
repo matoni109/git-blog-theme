@@ -26,7 +26,7 @@ get_header(); ?>
     while (have_posts()) :
       the_post();
       get_template_part('template-parts/content', 'single');
-      get_template_part('/template-parts/components/post-tags-getter');
+
       get_template_part('pagination');
 
       // If comments are open or we have at least one comment, load up the comment template.
