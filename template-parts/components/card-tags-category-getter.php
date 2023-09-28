@@ -6,13 +6,24 @@
  * To be used inside cards
  */
 
+// Check if $args is defined, and if not, initialize it as an empty array.
+if (!isset($args)) {
+  $args = array();
+}
+
+// Merge the provided $args with the default array.
+$args = wp_parse_args(
+  $args,
+  array('category_tags_array' => ['category', 'post_tag'])
+);
+$types = $args['category_tags_array'];
+
 $the_post_id = get_the_ID();
-$article_terms = wp_get_post_terms($the_post_id, ['category', 'post_tag']);
+$article_terms = wp_get_post_terms($the_post_id, $types);
 
 if (!empty($article_terms) && is_array($article_terms)) {
 ?>
-
-  <!-- tags -->
+  <!-- Tags -->
   <div class="flex flex-wrap">
     <?php foreach ($article_terms as $key => $article_term) { ?>
       <a class="category-item pr-1" href="<?php echo esc_url(get_term_link($article_term)); ?>">
@@ -22,7 +33,6 @@ if (!empty($article_terms) && is_array($article_terms)) {
       </a>
     <?php } ?>
   </div>
-  <!-- /tags -->
-
+  <!-- /Tags -->
 <?php } // End of if condition
 ?>

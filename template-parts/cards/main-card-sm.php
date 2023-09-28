@@ -27,7 +27,7 @@ $type = $args['type'];
   <div class="entry-summary">
 
     <?php if ($type != "archive") : ?>
-      <?php get_template_part('template-parts/components/card-tags-category-getter'); ?>
+      <?php get_template_part('template-parts/components/card-tags-category-getter', null, ['category_tags_array' => ['category']]); ?>
     <?php endif; ?>
 
     <?php the_title(sprintf('<h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-3 pt-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
