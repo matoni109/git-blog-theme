@@ -7,6 +7,8 @@
 <?php do_action('git_blog_theme_content_after'); ?>
 
 <footer id="colophon" class="mt-6" role="contentinfo">
+  <?php get_template_part('template-parts/components/hero-email-signup') ?>
+
   <?php do_action('git_blog_theme_footer'); ?>
 
   <div class="container mx-auto text-gray-500 text-xs md:text-small">

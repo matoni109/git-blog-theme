@@ -1,0 +1,119 @@
+/* Newsletter styles */
+.newsletter {
+  padding: 1px;
+  background: linear-gradient(92.05deg, #d2a8ff 12.09%, #f778ba 42.58%, #ff7b72 84.96%);
+}
+
+/* Background color class */
+.color-bg-subtle {
+  background-color: #1c2027;
+}
+
+/* Form group styles */
+.form-group {
+  margin: 15px 0;
+}
+
+/* Form checkbox styles */
+.form-checkbox {
+  padding-left: 20px;
+  margin: 15px 0;
+  vertical-align: middle;
+}
+
+/* Newsletter form styles */
+.newsletter-form {
+  height: 56px;
+  overflow: hidden;
+  background: black;
+}
+
+/* Newsletter field and submit button styles */
+.newsletter-field,
+.newsletter-submit {
+  background: 0 0;
+  border: unset;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Font size for marketing */
+.f4-mktg {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+/* Newsletter field styles */
+.newsletter-field {
+  height: 56px;
+  padding-right: 32px;
+  padding-left: 32px;
+  color: #9ca3af;
+
+}
+
+/* Focus styles for field and submit button */
+.newsletter-field:focus,
+.newsletter-submit:focus {
+  outline-color: grey;
+}
+
+/* Newsletter submit button styles */
+.newsletter-submit {
+  width: 100%;
+  height: 46px;
+  padding-right: 24px;
+  padding-left: 32px;
+  color: #ff7b72;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Remove border and shadow for field and submit button */
+.newsletter-field,
+.newsletter-submit {
+  background: black;
+  border: unset;
+  outline-offset: -5px;
+  box-shadow: none;
+}
+
+/* SVG transition for arrow */
+.btn-mktg .arrow-symbol-mktg,
+.link-mktg .arrow-symbol-mktg,
+.arrow-target-mktg .arrow-symbol-mktg {
+  transition: transform .2s;
+  transform: translateX(0);
+}
+
+/* Stroke animation for arrow */
+.btn-mktg .arrow-symbol-mktg path:last-child,
+.link-mktg .arrow-symbol-mktg path:last-child,
+.arrow-target-mktg .arrow-symbol-mktg path:last-child {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  transition: stroke-dashoffset .2s;
+}
+
+/* Hover effect for arrow */
+.btn-mktg:hover .arrow-symbol-mktg,
+.link-mktg:hover .arrow-symbol-mktg,
+.arrow-target-mktg:hover .arrow-symbol-mktg {
+  transform: translateX(5px);
+  /* Adjust the desired horizontal movement */
+}
+
+/* Stroke animation on hover for arrow */
+.btn-mktg:hover .arrow-symbol-mktg path:last-child,
+.link-mktg:hover .arrow-symbol-mktg path:last-child,
+.arrow-target-mktg:hover .arrow-symbol-mktg path:last-child {
+  stroke-dashoffset: 0;
+}
+
+/* Text gradient for submit button text */
+.newsletter-submit span {
+  background: linear-gradient(92.05deg, #d2a8ff 12.09%, #f778ba 42.58%, #ff7b72 84.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
