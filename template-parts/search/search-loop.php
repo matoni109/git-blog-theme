@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * Used in Search and Index.
+ *
+ * TODO: pull this out in to smart component
+ * loop.php
+ */
+
+?>
+
 <span class="search-items grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
   <?php
   while (have_posts()) :
