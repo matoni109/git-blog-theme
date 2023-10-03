@@ -11,15 +11,15 @@
 
           <form method="post" action="#" class="form-validator">
             <div class="flex flex-row items-center newsletter-form rounded-lg required form-group errored">
-              <div class="w-full md:w-3/4"> <!-- 3/4 width for the email input -->
+              <div class="w-full md:w-2/3 without-ring"> <!-- 3/4 width for the email input -->
                 <!-- email input -->
-                <input type="email" required id="newsletter_emailAddress" name="emailAddress" placeholder="<?php echo esc_attr_x('Your email address', 'placeholder', 'tailpress'); ?>" class="required validity-check block w-full h-full mb-2 md:mb-0 text-lg newsletter-field rounded-lg text-current" value="">
+                <input type="email" required id="newsletter_emailAddress" name="emailAddress" placeholder="<?php echo esc_attr_x('Your email address', 'placeholder', 'tailpress'); ?>" class="w-full h-full mb-2 md:mb-0 text-lg newsletter-field rounded-lg text-current" value="">
               </div>
 
               <input type="hidden" id="newsletter_classification" name="classification" value="Practitioner">
 
               <!-- button desktop -->
-              <button type="submit" class="hidden md:flex w-1/4 form-validator-submit newsletter-submit flex-shrink flex-row font-semibold rounded-lg items-center arrow-target-mktg md:mb-0 f3-mktg btn-mktg">
+              <button type="submit" class="hidden md:flex w-1/3 form-validator-submit newsletter-submit flex-shrink flex-row font-semibold rounded-lg items-center arrow-target-mktg md:mb-0 f3-mktg btn-mktg mx-2 px-2">
                 <span class="text-gradient-purple-coral">
                   Subscribe
                 </span>

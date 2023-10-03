@@ -116,3 +116,7 @@
   background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
+
+.without-ring input {
+  @apply focus:ring-0 focus:ring-offset-0;
+}
