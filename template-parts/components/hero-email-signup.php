@@ -9,20 +9,21 @@
         </div>
         <div class="p-3 lg:p-5 pt-3 lg:pt-7 pb-3 lg:pb-7 w-full lg:w-1/2 xl:w-5/12">
 
-
           <form method="post" action="#" class="form-validator">
-            <div class="flex flex-row newsletter-form rounded-lg required form-group errored">
-              <div class="m-0 w-full">
+            <div class="flex flex-row items-center newsletter-form rounded-lg required form-group errored">
+              <div class="w-full md:w-3/4"> <!-- 3/4 width for the email input -->
                 <!-- email input -->
-
                 <input type="email" required id="newsletter_emailAddress" name="emailAddress" placeholder="<?php echo esc_attr_x('Your email address', 'placeholder', 'tailpress'); ?>" class="required validity-check block w-full h-full mb-2 md:mb-0 text-lg newsletter-field rounded-lg text-current" value="">
               </div>
 
               <input type="hidden" id="newsletter_classification" name="classification" value="Practitioner">
 
               <!-- button desktop -->
-              <button type="submit" class="form-validator-submit newsletter-submit flex-shrink-0 arrow-target hidden md:flex flex-row text-semibold text-gradient-purple-coral rounded-lg"><span class="">Subscribe md</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol" width="24" height="24" viewBox="0 0 16 16" fill="none">
+              <button type="submit" class="hidden md:flex w-1/4 form-validator-submit newsletter-submit flex-shrink flex-row font-semibold rounded-lg items-center arrow-target-mktg md:mb-0 f3-mktg btn-mktg">
+                <span class="text-gradient-purple-coral">
+                  Subscribe
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="20" height="20" viewBox="0 0 16 16" fill="none">
                   <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
                   <path class="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
                 </svg>
@@ -37,7 +38,7 @@
             </div>
 
             <!-- button mobile -->
-            <button type="submit" class="md:hidden form-validator-submit newsletter-submit flex-shrink-0 flex flex-row font-semibold rounded-lg items-center arrow-target-mktg mt-3 f3-mktg btn-mktg">
+            <button type="submit" class="md:hidden form-validator-submit newsletter-submit flex-shrink-0 flex flex-row w-full font-semibold rounded-lg items-center arrow-target-mktg mt-3 f3-mktg btn-mktg">
               <span class="text-gradient-purple-coral">
                 Subscribe
               </span>

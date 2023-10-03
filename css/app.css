@@ -620,6 +620,10 @@ video {
   grid-column: span 12 / span 12;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .m-8{
   margin: 2rem;
 }
@@ -816,6 +820,10 @@ video {
   height: auto;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -848,6 +856,14 @@ video {
   width: 100%;
 }
 
+.w-1\/4{
+  width: 25%;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
 .max-w-screen-lg{
   max-width: 960px;
 }
@@ -874,6 +890,10 @@ video {
 
 .flex-none{
   flex: none;
+}
+
+.flex-shrink{
+  flex-shrink: 1;
 }
 
 .flex-shrink-0{
@@ -995,6 +1015,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-md{
@@ -1132,8 +1156,16 @@ video {
   padding: 0.5rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-12{
@@ -1320,6 +1352,10 @@ video {
   font-size: 1.5rem;
 }
 
+.text-xxxl{
+  font-size: 1.875rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1334,6 +1370,10 @@ video {
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
@@ -1373,6 +1413,10 @@ video {
 .text-blue-600{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-current{
+  color: currentColor;
 }
 
 .text-gray-400{
@@ -1427,6 +1471,10 @@ video {
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.accent-gray-500{
+  accent-color: #6b7280;
 }
 
 .shadow-behind{
@@ -1845,6 +1893,140 @@ footer a:hover{
   color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
+/* Newsletter styles */
+
+.newsletter {
+  padding: 1px;
+  background: linear-gradient(92.05deg, #d2a8ff 12.09%, #f778ba 42.58%, #ff7b72 84.96%);
+}
+
+/* Background color class */
+
+.color-bg-subtle {
+  background-color: #1c2027;
+}
+
+/* Form group styles */
+
+.form-group {
+  margin: 15px 0;
+}
+
+/* Form checkbox styles */
+
+.form-checkbox {
+  padding-left: 20px;
+  margin: 15px 0;
+  vertical-align: middle;
+}
+
+/* Newsletter form styles */
+
+.newsletter-form {
+  height: 56px;
+  overflow: hidden;
+  background: black;
+}
+
+/* Newsletter field and submit button styles */
+
+.newsletter-field,
+.newsletter-submit {
+  background: 0 0;
+  border: unset;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Font size for marketing */
+
+.f4-mktg {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+/* Newsletter field styles */
+
+.newsletter-field {
+  height: 56px;
+  padding-right: 32px;
+  padding-left: 32px;
+  color: #9ca3af;
+}
+
+/* Focus styles for field and submit button */
+
+.newsletter-field:focus,
+.newsletter-submit:focus {
+  outline-color: grey;
+}
+
+/* Newsletter submit button styles */
+
+.newsletter-submit {
+  height: 46px;
+  padding-right: 24px;
+  padding-left: 32px;
+  color: #ff7b72;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Remove border and shadow for field and submit button */
+
+.newsletter-field,
+.newsletter-submit {
+  background: black;
+  border: unset;
+  outline-offset: -5px;
+  box-shadow: none;
+}
+
+/* SVG transition for arrow */
+
+.btn-mktg .arrow-symbol-mktg,
+.link-mktg .arrow-symbol-mktg,
+.arrow-target-mktg .arrow-symbol-mktg {
+  transition: transform .2s;
+  transform: translateX(0);
+}
+
+/* Stroke animation for arrow */
+
+.btn-mktg .arrow-symbol-mktg path:last-child,
+.link-mktg .arrow-symbol-mktg path:last-child,
+.arrow-target-mktg .arrow-symbol-mktg path:last-child {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  transition: stroke-dashoffset .2s;
+}
+
+/* Hover effect for arrow */
+
+.btn-mktg:hover .arrow-symbol-mktg,
+.link-mktg:hover .arrow-symbol-mktg,
+.arrow-target-mktg:hover .arrow-symbol-mktg {
+  transform: translateX(5px);
+  /* Adjust the desired horizontal movement */
+}
+
+/* Stroke animation on hover for arrow */
+
+.btn-mktg:hover .arrow-symbol-mktg path:last-child,
+.link-mktg:hover .arrow-symbol-mktg path:last-child,
+.arrow-target-mktg:hover .arrow-symbol-mktg path:last-child {
+  stroke-dashoffset: 0;
+}
+
+/* Text gradient for submit button text */
+
+.newsletter-submit span {
+  background: linear-gradient(92.05deg, #d2a8ff 12.09%, #f778ba 42.58%, #ff7b72 84.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
 /* Hamburger styles */
 
 .hamburger .line-1-open{
@@ -2067,9 +2249,18 @@ footer a:hover{
     margin-right: -2rem;
   }
 
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:my-6{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:mb-2{
@@ -2106,6 +2297,14 @@ footer a:hover{
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-1\/4{
+    width: 25%;
+  }
+
+  .md\:w-3\/4{
+    width: 75%;
   }
 
   .md\:flex-auto{
@@ -2210,13 +2409,39 @@ footer a:hover{
     display: inline;
   }
 
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:p-5{
+    padding: 1.25rem;
+  }
+
+  .lg\:p-7{
+    padding: 1.75rem;
   }
 
   .lg\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .lg\:py-7{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:pb-7{
+    padding-bottom: 1.75rem;
   }
 
   .lg\:pl-4{
@@ -2225,6 +2450,10 @@ footer a:hover{
 
   .lg\:pr-0{
     padding-right: 0px;
+  }
+
+  .lg\:pt-7{
+    padding-top: 1.75rem;
   }
 
   .lg\:text-5xl{
@@ -2240,5 +2469,15 @@ footer a:hover{
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1260px){
+  .xl\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .xl\:w-7\/12{
+    width: 58.333333%;
   }
 }
