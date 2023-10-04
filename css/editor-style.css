@@ -100,6 +100,11 @@
   margin-right: 0.125rem
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem
@@ -138,16 +143,6 @@
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem
-}
-
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem
 }
 
 .mb-0 {
@@ -410,14 +405,6 @@
   grid-template-columns: repeat(1, minmax(0, 1fr))
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr))
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr))
-}
-
 .flex-row {
   flex-direction: row
 }
@@ -458,20 +445,8 @@
   justify-content: space-between
 }
 
-.gap-1 {
-  gap: 0.25rem
-}
-
 .gap-4 {
   gap: 1rem
-}
-
-.gap-2 {
-  gap: 0.5rem
-}
-
-.gap-3 {
-  gap: 0.75rem
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -500,10 +475,6 @@
 
 .break-words {
   overflow-wrap: break-word
-}
-
-.break-all {
-  word-break: break-all
 }
 
 .rounded {
@@ -542,6 +513,14 @@
   border-top-width: 1px
 }
 
+.border-t-2 {
+  border-top-width: 2px
+}
+
+.border-t-4 {
+  border-top-width: 4px
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity))
@@ -559,6 +538,11 @@
 
 .border-transparent {
   border-color: transparent
+}
+
+.border-slate-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity))
 }
 
 .bg-current {
@@ -1291,10 +1275,6 @@ body {
     grid-auto-flow: column
   }
 
-  .md\:grid-flow-col-dense {
-    grid-auto-flow: column dense
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
   }
@@ -1353,6 +1333,11 @@ body {
     padding-right: 0px
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem
@@ -1365,11 +1350,6 @@ body {
 
   .md\:text-small {
     font-size: 0.875rem
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem
   }
 
   .md\:tracking-wide {
@@ -1408,14 +1388,6 @@ body {
 
   .lg\:w-1\/2 {
     width: 50%
-  }
-
-  .lg\:grid-flow-col {
-    grid-auto-flow: column
-  }
-
-  .lg\:grid-flow-col-dense {
-    grid-auto-flow: column dense
   }
 
   .lg\:grid-cols-3 {
@@ -1465,6 +1437,11 @@ body {
     padding-top: 1.75rem
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1
@@ -1478,11 +1455,6 @@ body {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem
   }
 }
 

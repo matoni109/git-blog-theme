@@ -17,6 +17,7 @@ if ($recent_posts->have_posts()) :
 ?>
   <!-- Last 4 Posts -->
   <div id="recent-posts" class="my-8">
+    <h2 class="font-extrabold leading-tight text-xl md:text-2xl lg:text-3xl pt-3 pb-4 border-slate-800 border-t-4">Latest posts</h2>
     <span class="latest-items grid md:grid-flow-col md:gap-1 lg:gap-3 md:grid-cols-4">
       <?php while ($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
         <div class="px-2 mx-1">
