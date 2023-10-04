@@ -20,9 +20,11 @@ $type = $args['type'];
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('flex flex-col py-6 border-t border-gray-200'); ?>>
 
-  <header class="entry-header">
-    <?php the_post_thumbnail('large', ['class' => 'rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img', 'loading' => 'lazy', 'alt' => get_the_title()]); ?>
-  </header>
+  <?php if ($type != "latest") : ?>
+    <header class="entry-header">
+      <?php the_post_thumbnail('large', ['class' => 'rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img', 'loading' => 'lazy', 'alt' => get_the_title()]); ?>
+    </header>
+  <?php endif; ?>
 
   <div class="entry-summary">
 
@@ -30,7 +32,7 @@ $type = $args['type'];
       <?php get_template_part('template-parts/components/card-tags-category-getter', null, ['category_tags_array' => ['category']]); ?>
     <?php endif; ?>
 
-    <?php the_title(sprintf('<h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-3 pt-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+    <?php the_title(sprintf('<h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
 
     <?php html5wp_excerpt('html5wp_index'); ?>
 
@@ -39,7 +41,7 @@ $type = $args['type'];
       <?php if ($type != "author") : ?>
 
         <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
-          <p class="text-small font-bold capitalize"><?php the_author() ?></p>
+          <p class="text-small font-bold capitalize break-words"><?php the_author() ?></p>
         </a>
 
       <?php endif; ?>

@@ -27,8 +27,9 @@
         </div>
 
       <?php endif; ?>
-
     </div>
+    <?php get_template_part("template-parts/components/latest-posts") ?>
+
   </div>
 </div>
 <?php
