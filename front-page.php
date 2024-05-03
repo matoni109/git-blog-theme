@@ -1,9 +1,19 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Front Page template file.
+ *
+ * Wordpress Will look here first
+ * Remove or re-name this file if you want to
+ * go through the index loop.
+ */
+
+get_header(); ?>
 
 <div class="container mx-auto my-8">
   <div class="mx-auto">
     <div class="px-4">
-      <h3>front page</h3>
+      <h2>front page</h2>
       <?php if (have_posts()) : ?>
 
         <div class="max-w-screen-lg mx-auto">
