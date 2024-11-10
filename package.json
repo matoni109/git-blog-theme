@@ -26,7 +26,7 @@
     "watch": "cross-env NODE_ENV=development concurrently \"npm run watch:css-app\" \"npm run watch:css-editor\" \"npm run watch:js\"",
     "browser-sync": "cross-env NODE_ENV=development browser-sync start --proxy \"https://git-hub-blog.local\" --host=\"git-hub-blog.local\" --no-inject-changes --files=\"./\"",
     "watch-sync": "cross-env NODE_ENV=development concurrently \"npm run browser-sync\" \"npm run watch\"",
-    "zip": "bestzip git-blog-theme.zip screenshot.png *.php style.css css/* js/* images/* template-parts/*",
+    "zip": "bestzip git-blog-theme.zip screenshot.png *.php style.css css/* js/* images/* template-parts/* resources/images/*",
     "production-zip": "npm run production && npm run zip"
   },
   "devDependencies": {
