@@ -46,7 +46,9 @@
             <div class="mx-auto max-w-screen-md">
               <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
                 with <a href="https://tailpress.io" class="text-primary">TailPress</a>.</h1>
-              <p class="text-gray-600 text-xl font-medium mb-10">github blog theme, built using Tailpress, Tailwind CSS. Find this block in <code>header.php</code> and start building on top of this bootstrapped theme.</p>
+              <p class="text-gray-600 text-xl font-medium mb-10">git-blog-theme, built using Tailpress, Tailwind CSS.</p>
+              <p class="text-gray-600 text-xl font-medium mb-10">Find this block in <code>header.php</code> and start building on top of this bootstrapped theme.</p>
+              <p class="text-gray-600 text-xl font-medium mb-10">To follow the original video tutorial uncomment <code>components/you-tube-tutorial-loop.php</code> inside the <code>front-page.php</code></p>
               <a href="https://github.com/jeffreyvr/tailpress" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
                 on GitHub</a>
             </div>
@@ -54,6 +56,7 @@
         </div>
 
         <!-- End introduction -->
+
       <?php } ?>
 
       <?php do_action('git_blog_theme_content_start'); ?>

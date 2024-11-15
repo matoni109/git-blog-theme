@@ -22,7 +22,7 @@ get_header(); ?>
     <div class="px-4">
 
 
-      <!--
+      <!-- tutorial starter loop
         <?php get_template_part("template-parts/components/you-tube-tutorial-loop") ?>
       -->
 
