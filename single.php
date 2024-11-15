@@ -19,7 +19,12 @@ $type = $args['type'];
 get_header(); ?>
 
 <div class="container my-8 mx-auto">
-  <h3>single php</h3>
+  <?php
+  if (defined('PAGE_DEBUG_MODE') && PAGE_DEBUG_MODE) {
+    get_template_part('template-parts/components/page-helper-button', null, ['text' => 'single php']);
+  }
+  ?>
+
   <?php if (have_posts()) : ?>
 
     <?php
