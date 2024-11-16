@@ -36,7 +36,8 @@ You will find the editable CSS and Javascript files within the `/resources` fold
 `template-parts/components` & `cards` contain the main features that I've added along the way, others include:
 
 * Pagination
-* Search
+* Responsive CSS
+* Search / Author / Category / Archive Pages
 * Gravatar
 * Wordpress template page identifier - "on/off" in `functions.php` ~ line050
 
