@@ -15,7 +15,7 @@ jobs:
           node-version: 16.x
           cache: "npm"
 
-      - run: yarn install
+      - run: npm install
       - name: Create release pull requests
         run: |
           npx github-pr-release $GITHUB_REPOSITORY --head develop --base main
