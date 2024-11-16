@@ -1,8 +1,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('mb-12'); ?>>
 
   <?php get_template_part('template-parts/content/content-header') ?>
-
-  <span>its content: </span>
+  <?php
+  if (defined('PAGE_DEBUG_MODE') && PAGE_DEBUG_MODE) {
+    get_template_part('template-parts/components/page-helper-button', null, ['text' => 'content']);
+  }
+  ?>
   <div class="entry-content">
     <?php
     /* translators: %s: Name of current post */

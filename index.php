@@ -8,6 +8,12 @@ get_header();
 
 <div class="container mx-auto my-8">
   <main role="main">
+
+    <?php
+    if (defined('PAGE_DEBUG_MODE') && PAGE_DEBUG_MODE) {
+      get_template_part('template-parts/components/page-helper-button', null, ['text' => 'index']);
+    }
+    ?>
     <section>
 
       <?php

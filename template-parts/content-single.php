@@ -1,5 +1,11 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <h3>content single</h3>
+
+  <?php
+  if (defined('PAGE_DEBUG_MODE') && PAGE_DEBUG_MODE) {
+    get_template_part('template-parts/components/page-helper-button', null, ['text' => 'content single']);
+  }
+  ?>
+
   <?php get_template_part('template-parts/content/content-header', 'single') ?>
 
   <div class="entry-content">
