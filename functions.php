@@ -47,7 +47,7 @@ add_action('after_setup_theme', 'git_blog_theme_setup');
 /**
  * Debug Mode to check page flow and Wordpress template priority.
  */
-define('PAGE_DEBUG_MODE', true); // Set to true to enable page type helpers.
+define('PAGE_DEBUG_MODE', false); // Set to true to enable page type helpers.
 
 /**
  * Remove <p> tags inside contact-form-7.

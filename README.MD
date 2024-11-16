@@ -20,6 +20,8 @@ My setup includes developing Wordpress using [Local](https://localwp.com/help-do
 
 Currently hosted at [git-blog-theme](git-blog-theme.enceladus.digital)
 
+![git blog theme](/resources/images/git-blog-theme.png)
+
 ### Clone Theme & Install
 
 * Clone repo `git clone https://github.com/matoni109/git-blog-theme.git && cd git-blog-theme`
@@ -34,7 +36,8 @@ You will find the editable CSS and Javascript files within the `/resources` fold
 `template-parts/components` & `cards` contain the main features that I've added along the way, others include:
 
 * Pagination
-* Search
+* Responsive CSS
+* Search / Author / Category / Archive Pages
 * Gravatar
 * Wordpress template page identifier - "on/off" in `functions.php` ~ line050
 
