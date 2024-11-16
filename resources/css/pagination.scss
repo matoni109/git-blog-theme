@@ -1,0 +1,13 @@
+  /* Pagination Styles */
+  .pagination {
+    span {
+        &.current .relative {
+          @apply bg-gray-300 overflow-hidden text-white text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+    }
+    }
+      span {
+        &.dots {
+          @apply hidden md:block rounded-md inline-flex items-center px-3 mx-0.5 py-2 font-semibold text-gray-600 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0 bg-gray-100
+        }
+  }
+}

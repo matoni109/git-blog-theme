@@ -1,0 +1,26 @@
+  /* Hamburger styles */
+  .hamburger {
+    .line-1-open {
+     @apply translate-y-0 rotate-45
+    }
+
+    .line-1-closed {
+     @apply -translate-y-2
+    }
+
+    .line-2-open {
+     @apply opacity-0 translate-x-3
+    }
+
+    .line-2-closed {
+     @apply opacity-100
+    }
+
+    .line-3-open {
+     @apply translate-y-0 -rotate-45
+    }
+
+    .line-3-closed {
+     @apply translate-y-2
+    }
+  }

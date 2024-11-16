@@ -1,0 +1,68 @@
+/* credit below:
+ https://www.velumi.com/guides/styling-contact-form-7-with-tailwind-sass/ */
+
+.wpcf7 {
+
+  input {
+    @apply block w-full px-4 py-3 mb-3 leading-tight border appearance-none text-primary font-semibold rounded;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  textarea {
+    @apply block w-full px-4 py-3 mb-3 leading-tight rounded border appearance-none text-primary font-semibold;
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  .wpcf7-submit {
+    @apply py-2 mr-auto w-40 mt-3 text-lg font-bold text-white border-2 border-transparent bg-primary rounded shadow-md;
+
+    &:hover {
+      @apply bg-white text-primary border-primary shadow-lg;
+    }
+
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  .wpcf7-form {
+    @apply flex flex-wrap justify-center w-full max-w-lg mx-auto;
+
+    &.sent {
+      .wpcf7-form-control-wrap {
+        @apply hidden;
+      }
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    @apply w-full px-3 mb-0;
+  }
+
+  .wpcf7-not-valid {
+    @apply border-red-600;
+  }
+
+  .wpcf7-not-valid-tip {
+    @apply font-semibold text-xs text-red-600 block mb-1 -mt-1;
+  }
+
+  .wpcf7-response-output {
+    @apply rounded border text-sm font-bold mt-0 my-auto relative;
+
+    &.wpcf7-validation-errors {
+      @apply border-red-600 text-red-600;
+    }
+
+    &.wpcf7-mail-sent-ok {
+      @apply text-primary border-primary;
+    }
+  }
+
+}

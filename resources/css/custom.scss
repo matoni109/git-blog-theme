@@ -1,0 +1,125 @@
+article > *:not(.entry-content),
+.entry-content > * {
+    @apply mx-auto max-w-content;
+}
+
+
+.entry-content,
+.block-editor-block-list__layout {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  p,
+  ul,
+  ol {
+    a {
+      @apply text-blue-500 underline;
+
+      &:hover {
+        @apply no-underline;
+      }
+    }
+
+    @apply mb-8;
+  }
+
+  ul:not(.block-editor-block-variation-picker__variations) {
+    li {
+      @apply list-disc list-inside;
+    }
+  }
+
+  /* resets list / link style for post-tags-getter */
+  ul.tag-list {
+    li {
+      @apply list-none;
+    } a {
+      text-decoration-line: none;
+    }
+  }
+
+  ol {
+    li {
+      @apply list-decimal list-inside;
+    }
+  }
+}
+
+/* custom page selector */
+
+/* .current_page_item, .current-menu-item,
+.current-menu-parent {}
+
+.current_page_item, .current-menu-parent {
+  /* font-weight: bold;
+  @apply text-primary;
+}
+
+ .page_item {
+ font-weight: bold;
+}
+
+/* footer custom css */
+footer a:hover {
+  @apply text-primary;
+  text-decoration-line: underline;
+}
+
+/* custom drop shadow */
+#primary-menu .sub-menu:after, #primary-menu .sub-menu::before {
+content: "";
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-bottom: 8px solid #fff;
+height: 0;
+left: 50%;
+position: absolute;
+top: -8px;
+transform: translate(-50%);
+width: 0;
+z-index: 2;
+}
+
+/* custom category & tag font colour */
+.text-gradient-purple-coral {
+  background: -webkit-linear-gradient(-70deg, #8250df 0%, #d42a32 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-box-decoration-break: clone;
+}
+
+
+/* dancing thumbnale index cards */
+.tease-thumbnail:hover ,
+.tease-thumbnail:focus {
+  transform: scale(1.02) translate3d(0, 0, 0);
+}
+
+.tease-thumbnail__img {
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: scale(1) translate3d(0, 0, 0);
+  transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+}
+
+/* post tags before */
+.post-tags::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 4px;
+}
