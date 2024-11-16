@@ -1,59 +1,43 @@
-<p><img src="http://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></p>
+<p><code>git-blog-theme</code></p>
 
-[![GitHub release](https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver)](https://github.com/jeffreyvr/tailpress/releases/)
+[![GitHub release](https://img.shields.io/github/release/matoni109/git-blog-theme?include_prereleases=&sort=semver)](https://github.com/matoni109/git-blog-theme/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
-[![issues - tailpress](https://img.shields.io/github/issues/jeffreyvr/tailpress)](https://github.com/jeffreyvr/tailpress/issues)
+[![issues - tailpress](https://img.shields.io/github/issues/matoni109/git-blog-theme)](https://github.com/matoni109/git-blog-theme/issues)
 
 # Introduction
 
-TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/).
+Firstly all rights and credit to [Jeffrey van Rossum](https://github.com/jeffreyvr) & [TailPress website](https://tailpress.io). I got into Wordpress following the you-tube [screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG) series when I was between jobs in mid 2023, 90% of this theme was done back then, I only recently found time to finish the last 10% & felt it maybe helpful to others just starting out.
+
+I was a Ruby developer so please excuse the `php` that you find around the place, and I may have layed things out in a non Wordpress way.
+
+`git-blog-theme` is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting started
 
-### Using the installer
+My setup includes developing Wordpress using [Local](https://localwp.com/help-docs/getting-started/installing-local/) on top of Ubuntu 23.10 Linux. I've just been using Local in isolation and not connecting to any of their services.
 
-You can get started using the installer (using composer):
+### View the Theme
 
-```bash
-composer global require jeffreyvanrossum/tailpress-installer
+Currently hosted at [git-blog-theme](git-blog-theme.enceladus.digital)
 
-tailpress new example-theme
-```
+### Clone Theme & Install
 
-*If you haven't already, make sure to place the `~/.composer/vendor/bin` directory in your `PATH` so the tailpress executable is found when you run the tailpress command in your terminal.*
-
-You can optionally set the theme name.
-
-```bash
-tailpress new example-theme --name="Example Theme"
-```
-
-By default, TailPress uses Laravel Mix for compiling. Rather use Esbuild?
-
-```bash
-tailpress new example-theme --compiler="esbuild"
-```
-
-You can also initialize a new Git repository (branch defaults to `main`):
-
-```bash
-tailpress new example-theme --name="Example Theme" --git --branch="main"
-```
-
-Once your theme is ready, don't forget to cd into the directory.
-
-You will be asked if you would like to have WordPress installed as well. Keep in mind that you still need a local development environment for PHP and MySQL.
-
-### Regular method
-
-* Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
+* Clone repo `git clone https://github.com/matoni109/git-blog-theme.git && cd git-blog-theme`
 * Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
 * Run `npm install`
 * Run `npm run watch` to start developing
+* I use `npm run watch-sync` which uses browser-sync - check `package.json` for proxy setup info using Local
 
 ### General
 
 You will find the editable CSS and Javascript files within the `/resources` folder.
+
+`template-parts/components` & `cards` contain the main features that I've added along the way, others include:
+
+* Pagination
+* Search
+* Gravatar
+* Wordpress template page identifier - "on/off" in `functions.php` ~ line050
 
 Before you use your theme in production, make sure you run `npm run production`.
 
@@ -66,16 +50,8 @@ There are several NPM scripts available. You'll find the full list in the `packa
 | production | Creates a production (minified) build of app.js, app.css and editor-style.css. |
 | dev        | Creates a development build of app.js, app.css and editor-style.css.           |
 | watch      | Runs several watch scripts concurrently.                                       |
+| production-zip | Runs production and then creates a zip for theme export.                   |
 
-## Block editor support
-
-TailPress comes with support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
-
-A basic setup for `theme.json` is included. This also means that you need to at least use WordPress 5.8. If you wan't to support earlier WordPress versions, you can use an [older version](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
-
-CSS-classes for alignment (full, wide etc.) are generated automatically. You can opt-out on this by removing the plugin from the `tailwind.config.js` file.
-
-To make the editing experience within the block editor more in line with the front end styling, a `editor-style.css` is generated.
 
 ### Define theme colors and font sizes
 
@@ -86,13 +62,12 @@ Several colors and font sizes are defined from the beginning. You can modify the
 * [TailPress website](https://tailpress.io)
 * [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-* [Laravel Mix Documentation](https://laravel-mix.com)
 * [Esbuild Documentation](https://esbuild.github.io)
 
 ## Contributors
 
 * [Jeffrey van Rossum](https://github.com/jeffreyvr)
-* [All contributors](https://github.com/jeffreyvr/tailpress/graphs/contributors)
+* [All contributors](https://github.com/matoni109/git-blog-theme/graphs/contributors)
 
 ## License
 
