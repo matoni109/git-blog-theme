@@ -47,7 +47,7 @@
               <p class="text-gray-600 text-xl font-medium mb-10">git-blog-theme, built using Tailpress, Tailwind CSS.</p>
               <p class="text-gray-600 text-xl font-medium mb-10">Find this block in <code>header.php</code> and start building on top of this boot-strapped theme.</p>
               <p class="text-gray-600 text-xl font-medium mb-10">To follow the original video tutorial uncomment <code>components/you-tube-tutorial-loop.php</code> inside the <code>front-page.php</code></p>
-              <a href="https://github.com/matoni109/git-blog-theme" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
+              <a target="_blank" href="https://github.com/matoni109/git-blog-theme" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
                 on GitHub</a>
             </div>
           </div>

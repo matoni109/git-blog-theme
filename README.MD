@@ -23,7 +23,6 @@ Currently hosted at [git-blog-theme](git-blog-theme.enceladus.digital)
 ### Clone Theme & Install
 
 * Clone repo `git clone https://github.com/matoni109/git-blog-theme.git && cd git-blog-theme`
-* Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
 * Run `npm install`
 * Run `npm run watch` to start developing
 * I use `npm run watch-sync` which uses browser-sync - check `package.json` for proxy setup info using Local

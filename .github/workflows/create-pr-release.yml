@@ -1,0 +1,23 @@
+name: Create release pull requests
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: "yarn"
+
+      - run: yarn install
+      - name: Create release pull requests
+        run: |
+          npx github-pr-release $GITHUB_REPOSITORY --head develop --base main
+        env:
+          GITHUB_PR_RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
