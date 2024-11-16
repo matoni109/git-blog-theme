@@ -20,6 +20,8 @@ My setup includes developing Wordpress using [Local](https://localwp.com/help-do
 
 Currently hosted at [git-blog-theme](git-blog-theme.enceladus.digital)
 
+![git blog theme](/resources/images/git-blog-theme.png)
+
 ### Clone Theme & Install
 
 * Clone repo `git clone https://github.com/matoni109/git-blog-theme.git && cd git-blog-theme`
