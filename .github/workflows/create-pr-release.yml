@@ -2,7 +2,7 @@ name: Create release pull requests
 
 on:
   push:
-    branches: [develop]
+    branches: [disabled]
 
 jobs:
   build:
