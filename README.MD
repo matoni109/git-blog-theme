@@ -18,7 +18,7 @@ My setup includes developing Wordpress using [Local](https://localwp.com/help-do
 
 ### View the Theme
 
-Currently hosted at [git-blog-theme](git-blog-theme.enceladus.digital)
+Currently hosted at [git-blog-theme](https://git-blog-theme.enceladus.digital)
 
 ![git blog theme](/resources/images/git-blog-theme.png)
 
