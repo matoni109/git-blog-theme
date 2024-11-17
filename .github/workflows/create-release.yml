@@ -45,5 +45,6 @@ jobs:
           files: git-blog-theme.zip
           generate_release_notes: true
           discussion_category_name: Announcements
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
