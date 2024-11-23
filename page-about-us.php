@@ -27,7 +27,8 @@ get_header();
             </span>
 
             <div id="author-description" class="mb-8 mt-3 lg:mt-6">
-              <p class="text-left break-words indent-8">Niyati Tamaskar is a mother, engineer, entrepreneur, public speaker, and author. She speaks on issues of cultural bias, the stigma of cancer, and more. Her speaking and media appearances include her signature TEDx talk, a cover and feature spread in Columbus magazine on her journey and message of destigmatizing cancer, and a video created by Breastcancer.org on “How Niyati Tamaskar Overcame Cultural Cancer Stigma to Become an Advocate”—aimed at highlighting the minority experience while facing cancer.</p>
+              <p class="text-left break-words indent-8 text-gray-600 break-words">Enceladus Digital gives you access to in depth knowledge of both web development, eCommerce platforms ( shopify ), and customer WordPress theme development. Add to this we can assit with your copy writing needs, online blogs, and in house educational requirements.</p>
+              <p class="pt-2 text-gray-600 break-words">Don't let poor page speed and bad google reviews and ranking slow down your business, and disctract your from you core business, leave that to enceladus digital.</p>
             </div>
 
           </header>
@@ -56,14 +57,15 @@ get_header();
                   </div>
                   <!-- /Tags -->
 
-                  <h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-1"><a href="/getting-started-with-edge-computing/" rel="bookmark">Getting started with edge computing</a></h2>
-                  <p class="flex flex-col text-gray-600 break-words pt-2">The Microsoft Azure cloud computing dictionary describes edge computing as a framework that “allows devices in remote locations to process data at the ‘edge’ of the network, either by the device or a local server. And when data needs to...</p>
+                  <h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-1"><a href="#" rel="bookmark">Chris Wade</a></h2>
+                  <p class="flex flex-col text-gray-600 break-words pt-2">Chris Wade is a Brisbane based web developer, and sales specialist. He has worked in Shopify agencies, Ruby on Rails projects and has also launched projects on Wordpress, Bridgetown, Jekyll, and other content management systems.</p>
+                  <p class="flex flex-col text-gray-600 break-words pt-2">He advises on general projects direction, and what tools you'll need to get the job done.</p>
                   <div class="flex items-center pt-2">
 
                     <span class="flex flex-col pt-2">
 
-                      <time datetime="2023-09-16T01:04:53+00:00" itemprop="datePublished" class="font-mono text-sm text-gray-700">
-                        Web Developer / Project Management</time>
+                      <span class="font-mono text-sm text-gray-700">
+                        Web Developer / Project Management</span>
                     </span>
                   </div>
 
@@ -80,7 +82,7 @@ get_header();
               <article id="emily-brewin" class="flex flex-col md:flex-row-reverse p-2 py-6 border-t border-gray-200 md:mb-2 post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-code category-programming tag-code tag-computing tag-edge">
 
                 <header class="entry-header basis-1/2 pb-3 md:pb-1 lg:px-3">
-                  <a href="//git-hub-blog.local:3000/getting-started-with-edge-computing/" alt="Getting started with edge computing"><img width="582" height="582" src="https://emilybrewin.com/wp-content/uploads/2024/02/EBrewin_headshot.webp" class="rounded object-cover object-scale-down tease-thumbnail tease-thumbnail__img wp-post-image" alt="Getting started with edge computing"></a>
+                  <a href="https://emilybrewin.com/" target="_blank" alt="Photo of emily brewin"><img width="582" height="582" src="https://emilybrewin.com/wp-content/uploads/2024/02/EBrewin_headshot.webp" class="rounded object-cover object-scale-down tease-thumbnail tease-thumbnail__img wp-post-image" alt="Photo of emily brewin"></a>
                 </header>
 
                 <div class="entry-summary md:px-3 basis-1/2">
@@ -102,8 +104,8 @@ get_header();
                   <div class="flex items-center pt-2">
 
                     <span class="flex flex-col pt-2">
-                      <time datetime="2023-09-16T01:04:53+00:00" itemprop="datePublished" class="font-mono text-sm text-gray-700">
-                        Copy Writer / SEO Specalist</time>
+                      <span class="font-mono text-sm text-gray-700">
+                        Copy Writer / SEO Specalist</span>
                     </span>
                   </div>
 
