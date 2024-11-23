@@ -42,7 +42,7 @@ get_header();
               <article id="chris-wade" class="flex flex-col md:flex-row-reverse p-2 py-6 border-t border-gray-200 md:mb-2 post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-code category-programming tag-code tag-computing tag-edge">
 
                 <header class="entry-header basis-1/2 pb-3 md:pb-1 lg:px-3">
-                  <a href="#" alt="Getting started with edge computing"><img width="582" height="582" src="https://res.cloudinary.com/oeelsafe/image/upload/v1627111944/r88j7skh1f3mpb4pd8lah4nag3kc.webp" class="rounded object-cover object-scale-up tease-thumbnail tease-thumbnail__img wp-post-image" alt="Getting started with edge computing"></a>
+                  <a href="#" alt="Getting started with edge computing"><img src="https://res.cloudinary.com/oeelsafe/image/upload/v1627111944/r88j7skh1f3mpb4pd8lah4nag3kc.webp" class="rounded object-scale-down tease-thumbnail tease-thumbnail__img wp-post-image h-96 w-96" alt="Getting started with edge computing"></a>
                 </header>
 
                 <div class="entry-summary md:px-3 basis-1/2">
@@ -82,7 +82,7 @@ get_header();
               <article id="emily-brewin" class="flex flex-col md:flex-row-reverse p-2 py-6 border-t border-gray-200 md:mb-2 post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-code category-programming tag-code tag-computing tag-edge">
 
                 <header class="entry-header basis-1/2 pb-3 md:pb-1 lg:px-3">
-                  <a href="https://emilybrewin.com/" target="_blank" alt="Photo of emily brewin"><img width="582" height="582" src="https://emilybrewin.com/wp-content/uploads/2024/02/EBrewin_headshot.webp" class="rounded object-cover object-scale-down tease-thumbnail tease-thumbnail__img wp-post-image" alt="Photo of emily brewin"></a>
+                  <a href="https://emilybrewin.com/" target="_blank" alt="Photo of emily brewin"><img width="582" height="582" src="https://emilybrewin.com/wp-content/uploads/2024/02/EBrewin_headshot.webp" class="rounded h-96 w-96 object-cover tease-thumbnail tease-thumbnail__img wp-post-image" alt="Photo of emily brewin"></a>
                 </header>
 
                 <div class="entry-summary md:px-3 basis-1/2">
