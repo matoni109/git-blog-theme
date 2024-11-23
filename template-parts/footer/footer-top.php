@@ -5,7 +5,7 @@
       <a href="<?php echo get_bloginfo('url'); ?>" class="flex-none" aria-label="Go to enceladus digital homepage">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/enceladus-moon.svg" class="object-scale-up h-14" aria-label="logo-enceladus">
       </a>
-      <p class="flex-auto font-bold text-gray-800 text-xxl font-mono text-center"><?php echo get_bloginfo('name'); ?>
+      <p class="flex-auto font-bold text-gray-800 md:text-lg text-xxl font-mono text-center"><?php echo get_bloginfo('name'); ?>
       <p>
     </span>
   </div>
