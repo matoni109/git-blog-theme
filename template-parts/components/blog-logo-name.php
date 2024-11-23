@@ -4,11 +4,11 @@
   <?php } else { ?>
     <div class="flex flex-col items-start">
       <a href="<?php echo get_bloginfo('url'); ?>" class="flex items-center font-extrabold text-lg font-mono mb-1">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/github-mark.svg" class="object-scale-down w-8 mr-4">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/resources/images/enceladus-moon.svg" class="object-scale-down w-8 mr-4" alt="enceladus digital moon logo">
         <?php echo get_bloginfo('name'); ?>
       </a>
 
-      <p class="text-sm font-light text-gray-600">
+      <p class="font-mono">
         <?php echo get_bloginfo('description'); ?>
       </p>
     </div>
