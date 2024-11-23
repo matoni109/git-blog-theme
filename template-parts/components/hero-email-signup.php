@@ -4,7 +4,7 @@
     <div class="newsletter rounded-lg">
       <div class="flex flex-row flex-wrap color-bg-subtle rounded-lg">
         <div class="p-6 lg:p-7 py-6 lg:py-7 w-full lg:w-1/2 xl:w-7/12">
-          <h2 class="text-xxxl text-white font-semibold tracking-tight">Subscribe to the enceladus insider 🌑</h2>
+          <h2 class="text-xxxl text-white font-semibold tracking-tight">Subscribe to enceladus insider 🌑</h2>
           <p class="text-large text-gray-400 mt-2 mb-0">Discover tips, technical guides, and best practices in our monthly newsletter.</p>
         </div>
         <div class="p-3 lg:p-5 pt-3 lg:pt-7 pb-3 lg:pb-7 w-full lg:w-1/2 xl:w-5/12">
