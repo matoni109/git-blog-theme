@@ -42,7 +42,7 @@
           ?>
           <div class="px-12 py-16 my-12 rounded-xl bg-gradient-to-r from-pink-50 from-10% via-pink-100 via-30% to-gray-200 to-90%">
             <div class="mx-auto max-w-screen-md">
-              <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">A digital agency returning <a href="https://tailwindcss.com" class="text-secondary">Your Website</a> and brand to orbit. Take off again with <a href="https://tailpress.io" class="text-primary">Enceladus Digital</a>.
+              <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">A digital agency returning <a href="#" class="text-secondary">Your Website</a> and brand to orbit. Take off again with <a href="./" class="text-primary">Enceladus Digital</a>.
               </h1>
               <p class="text-gray-600 text-xl font-medium mb-10">From optimising your website’s speed to crafting strategies that drive search rankings, we’re here to get your site ready for takeoff.</p>
               <p class="text-gray-600 text-xl font-medium mb-10">Let’s make your website not just perform, but thrive in the competitive digital landscape.</p>
