@@ -6,7 +6,7 @@
 
 # Introduction
 
-Firstly all rights and credit to [Jeffrey van Rossum](https://github.com/jeffreyvr) & [TailPress website](https://tailpress.io). I got into Wordpress following the you-tube [screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG) series when I was between jobs in mid 2023, 90% of this theme was done back then, I only recently found time to finish the last 10% & felt it maybe helpful to others just starting out.
+Firstly all rights and credit to [Jeffrey van Rossum](https://github.com/jeffreyvr) & [TailPress website](https://tailpress.io). I got into Wordpress following the you-tube [screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG) series, and 90% of this theme was done back then, I only recently found time to finish the last 10% & felt it maybe helpful to others just starting out.
 
 I was a Ruby developer so please excuse the `php` that you find around the place, and I may have layed things out in a non Wordpress way.
 
@@ -18,7 +18,7 @@ My setup includes developing Wordpress using [Local](https://localwp.com/help-do
 
 ### View the Theme
 
-Currently hosted at [git-blog-theme](https://git-blog-theme.enceladus.digital)
+Currently in use at [git-blog-theme](https://enceladus.digital)
 
 ![git blog theme](/resources/images/git-blog-theme.png)
 
@@ -28,6 +28,12 @@ Currently hosted at [git-blog-theme](https://git-blog-theme.enceladus.digital)
 * Run `npm install`
 * Run `npm run watch` to start developing
 * I use `npm run watch-sync` which uses browser-sync - check `package.json` for proxy setup info using Local
+
+### Can I just download `git-blog-theme` ?
+
+Yes you can. Head over to [releases](https://github.com/matoni109/git-blog-theme/releases) and download the latest.
+
+Upload the `zip` file to your WordPress install in Appearance > Themes.
 
 ### General
 
