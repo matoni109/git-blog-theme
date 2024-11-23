@@ -37,11 +37,19 @@ jobs:
       - name: Create a zip file of the theme
         run: npm run zip
 
-      # Upload the zip file as a release asset if a tag is pushed
+      # Rename the zip file to include the tag name
+      - name: Rename zip file
+        run: |
+          tag_name=${{ github.ref_name }}
+          mv git-blog-theme.zip git-blog-theme-${tag_name}.zip
+
+      # Upload the renamed zip file as a release asset if a tag is pushed
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: git-blog-theme.zip
+          files: git-blog-theme-${{ github.ref_name }}.zip
+          generate_release_notes: true
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
