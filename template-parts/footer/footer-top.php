@@ -11,47 +11,37 @@
   </div>
 
   <div class=" basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 lg:pr-0 lg:pl-4">
-    <h5 class="h5 mb-3 font-mono">Product</h5>
+    <h5 class="h5 mb-3 font-mono">Services</h5>
     <ul class="list-none">
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/features" class="link-gray">Features</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/security" class="link-gray">Security</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/enterprise" class="link-gray">Enterprise</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/customer-stories?type=enterprise" class="link-gray">Customer Stories</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/pricing" class="link-gray">Pricing</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://resources.github.com/" class="link-gray">Resources</a></li>
+      <li class="mb-3"><a href="./services" class="link-gray">SEO</a></li>
+      <li class="mb-3"><a href="./services" class="link-gray">Digital Marketing</a></li>
+      <li class="mb-3"><a href="./services" class="link-gray">Page Speed</a></li>
+      <li class="mb-3"><a href="./services" class="link-gray">Google Analytics</a></li>
     </ul>
   </div>
 
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 pr-md-0 md:pl-4">
-    <h5 class="h5 mb-3 font-mono">Platform</h5>
+    <h5 class="h5 mb-3 font-mono">About Us</h5>
     <ul class="list-none">
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://developer.github.com/" class="link-gray">Developer API</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://partner.github.com/" class="link-gray">Partners</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://atom.io/" class="link-gray">Atom</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://www.electronjs.org/" class="link-gray">Electron</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://desktop.github.com/" class="link-gray">GitHub Desktop</a></li>
+      <li class="mb-3"><a href="./about-us" class="link-gray">About Us</a></li>
     </ul>
   </div>
 
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
-    <h5 class="h5 mb-3 font-mono">Support</h5>
+    <h5 class="h5 mb-3 font-mono">Site</h5>
     <ul class="list-none">
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://docs.github.com/" class="link-gray">Docs</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.community/" class="link-gray">Community Forum</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://services.github.com/" class="link-gray">Training</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://www.githubstatus.com/" class="link-gray">Status</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://support.github.com/" class="link-gray">Contact</a></li>
+      <li class="mb-3"><a href="./about-us" class="link-gray">About</a></li>
+      <li class="mb-3"><a href="./services" class="link-gray">Services</a></li>
+      <li class="mb-3"><a href="./projects" class="link-gray">Projects</a></li>
+      <li class="mb-3"><a href="./blog" class="link-gray">Blog</a></li>
+      <li class="mb-3"><a href="./contact" class="link-gray">Contact</a></li>
     </ul>
   </div>
 
   <div class="basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
-    <h5 class="h5 mb-3 font-mono">Company</h5>
+    <h5 class="h5 mb-3 font-mono">Projects</h5>
     <ul class="list-none">
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/about" class="link-gray">About</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.blog/" class="link-gray">Blog</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/about/careers" class="link-gray">Careers</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://github.com/about/press" class="link-gray">Press</a></li>
-      <li class="mb-3"><a href="https://web.archive.org/web/20210804111732/https://shop.github.com/" class="link-gray">Shop</a></li>
+      <li class="mb-3"><a href="./projects" class="link-gray">Projects</a></li>
     </ul>
   </div>
 
