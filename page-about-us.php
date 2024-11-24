@@ -49,7 +49,7 @@ get_header();
 
                   <!-- Tags -->
                   <div class="flex flex-wrap">
-                    <a class="category-item pr-1" href="/tag/web-design/">
+                    <a class="category-item pr-1" href="/blog/category/web-design/">
                       <p class="capitalize font-bold text-gradient-purple-coral">
                         web design </p>
                     </a>
@@ -89,7 +89,7 @@ get_header();
 
                   <!-- Tags -->
                   <div class="flex flex-wrap">
-                    <a class="category-item pr-1" href="/tag/copywriting/">
+                    <a class="category-item pr-1" href="/blog/category/copywriting/">
                       <p class="capitalize font-bold text-gradient-purple-coral">
                         Copy Writer </p>
                     </a>
