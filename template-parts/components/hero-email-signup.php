@@ -34,7 +34,7 @@
             <div class="checkbox text-gray-400 text-xs m-0 mt-2 form-group">
               <label class="font-normal">
                 <input id="optincheckbox" name="marketingEmailOptIn1" type="checkbox" value="True" class="accent-gray-500 bg-gray-800 text-gray-700 rounded cursor-pointer">
-                Yes please, I’d like Enceladus and affiliates to use my information for personalised communications, targeted advertising and campaign effectiveness. See the <a href="./privacy" target="blank">Enceladus Privacy Statement</a> for more details. </label>
+                Yes please, I’d like Enceladus and affiliates to use my information for personalised communications, targeted advertising and campaign effectiveness. See the <a href="/privacy" target="blank">Enceladus Privacy Statement</a> for more details. </label>
             </div>
 
             <!-- button mobile -->

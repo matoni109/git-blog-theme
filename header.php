@@ -21,7 +21,7 @@
     <!-- Above Navbar header -->
     <div class="bg-gray-800 py-3 text-xs">
       <div class="container mx-auto">
-        <a href="#" class="text-white">Back to enceladus.digital</a>
+        <a href="/" class="text-white">Back to enceladus.digital</a>
       </div>
     </div>
 
@@ -46,7 +46,7 @@
               </h1>
               <p class="text-gray-600 text-xl font-medium mb-10">From optimising your website’s speed to crafting strategies that drive search rankings, we’re here to get your site ready for takeoff.</p>
               <p class="text-gray-600 text-xl font-medium mb-10">Let’s make your website not just perform, but thrive in the competitive digital landscape.</p>
-              <a target="_blank" href="./services" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
+              <a href="/services" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
                 our services</a>
             </div>
           </div>
