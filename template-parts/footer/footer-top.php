@@ -13,10 +13,10 @@
   <div class=" basis-1/2 md:flex-auto mb-6 md:mb-2 pr-3 lg:pr-0 lg:pl-4">
     <h5 class="h5 mb-3 font-mono">Services</h5>
     <ul class="list-none">
-      <li class="mb-3"><a href="./services" class="link-gray">SEO</a></li>
-      <li class="mb-3"><a href="./services" class="link-gray">Digital Marketing</a></li>
-      <li class="mb-3"><a href="./services" class="link-gray">Page Speed</a></li>
-      <li class="mb-3"><a href="./services" class="link-gray">Google Analytics</a></li>
+      <li class="mb-3"><a href="./services#seo" class="link-gray">SEO</a></li>
+      <li class="mb-3"><a href="./services#social-media" class="link-gray">Digital Marketing</a></li>
+      <li class="mb-3"><a href="./services#copywriting" class="link-gray">Copy Writing</a></li>
+      <li class="mb-3"><a href="./services#web-design" class="link-gray">Web Design</a></li>
     </ul>
   </div>
 

@@ -41,7 +41,7 @@ get_header();
             <article id="post-76" class="flex flex-col py-6 border-t border-gray-200 post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-code category-programming tag-code tag-computing tag-edge">
 
               <header class="entry-header">
-                <img width="1024" height="538" src="//localhost:3000/wp-content/uploads/2023/09/1200x630-RMP-QA-LI_Banner_v2-1024x538.webp" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="Getting started with edge computing" loading="lazy" decoding="async">
+                <img width="1024" height="538" src="/wp-content/uploads/2024/11/seo-basics-to-kickstart-your-business.jpg" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="Getting started with edge computing" loading="lazy" decoding="async">
               </header>
 
               <div class="entry-summary">
@@ -68,7 +68,7 @@ get_header();
             <article id="post-73" class="flex flex-col py-6 border-t border-gray-200 post-73 post type-post status-publish format-standard has-post-thumbnail hentry category-copywriting">
 
               <header class="entry-header">
-                <img width="1024" height="538" src="//localhost:3000/wp-content/uploads/2023/09/1200x630-Security-Unfurl-DARK-Logo-1024x538.webp" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="" loading="lazy" decoding="async">
+                <img width="1024" height="538" src="/wp-content/uploads/2024/11/copy-writing-services.jpg" class=" rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="" loading="lazy" decoding="async">
               </header>
 
               <div class="entry-summary">
@@ -96,7 +96,7 @@ get_header();
             <article id="post-70" class="flex flex-col py-6 border-t border-gray-200 post-70 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
               <header class="entry-header">
-                <img width="1024" height="538" src="//localhost:3000/wp-content/uploads/2023/09/1200x630-Blog-Master-1024x538.webp" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="" loading="lazy" decoding="async">
+                <img width="1024" height="538" src="/wp-content/uploads/2024/11/ai-and-seo-1024x683-1.jpg" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="" loading="lazy" decoding="async">
               </header>
 
               <div class="entry-summary">
@@ -123,7 +123,7 @@ get_header();
             <article id="post-67" class="flex flex-col py-6 border-t border-gray-200 post-67 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
               <header class="entry-header">
-                <img width="1024" height="538" src="//localhost:3000/wp-content/uploads/2023/09/GitHub-availability-report_banner-1024x538.webp" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="GitHub Availability Report: August 2023" loading="lazy" decoding="async">
+                <img width="1024" height="538" src="/wp-content/uploads/2024/11/key-reasons-for-website-bounce-rate-1024x683-1.jpg" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="GitHub Availability Report: August 2023" loading="lazy" decoding="async">
               </header>
 
               <div class="entry-summary">
@@ -150,7 +150,7 @@ get_header();
             <article id="post-63" class="flex flex-col py-6 border-t border-gray-200 post-63 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
               <header class="entry-header">
-                <img width="1024" height="538" src="//localhost:3000/wp-content/uploads/2023/09/autotriage-dependabot-1024x538.webp" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="Introducing auto-triage rules for Dependabot" loading="lazy" decoding="async">
+                <img src="/wp-content/uploads/2024/11/creating-interactive-web-pages.jpg" class="rounded object-cover pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="Introducing auto-triage rules for Dependabot" loading="lazy" decoding="async">
               </header>
 
               <div class="entry-summary">
@@ -177,7 +177,7 @@ get_header();
             <article id="post-43" class="flex flex-col py-6 border-t border-gray-200 post-43 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
               <header class="entry-header">
-                <img width="1024" height="538" src="//localhost:3000/wp-content/uploads/2023/09/rust-1024x538.webp" class="rounded object-cover object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="Why Rust is the most admired language among developers" loading="lazy" decoding="async">
+                <img width="1024" height="538" src="/wp-content/uploads/2024/11/evolution-of-seo-1024x892-1.jpg" class="rounded object-scale-down pb-2 tease-thumbnail tease-thumbnail__img wp-post-image" alt="Why Rust is the most admired language among developers" loading="lazy" decoding="async">
               </header>
 
               <div class="entry-summary">
