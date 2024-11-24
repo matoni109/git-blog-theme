@@ -118,7 +118,7 @@ get_header();
             </article>
           </span>
 
-          <span id="item-4" class="search-item">
+          <span id="google-ads" class="search-item">
 
             <article id="post-67" class="flex flex-col py-6 border-t border-gray-200 post-67 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
@@ -130,22 +130,22 @@ get_header();
 
                 <!-- Tags -->
                 <div class="flex flex-wrap">
-                  <a class="category-item pr-1" href="//localhost:3000/category/uncategorized/">
+                  <a class="category-item pr-1" href="./category/google-ads/">
                     <p class="capitalize font-bold text-gradient-purple-coral">
-                      Uncategorized </p>
+                      Google Ads </p>
                   </a>
                 </div>
                 <!-- /Tags -->
 
-                <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1">GitHub Availability Report: August 2023</h2>
-                <p class="flex flex-col text-gray-600 break-words">In August, we experienced two incidents that resulted in degraded performance across GitHub services.lasting 4... </p>
+                <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1">Google Advertising</h2>
+                <p class="flex flex-col text-gray-600 break-words">Reach your audience when it matters most. Our Google Ads campaigns are designed to drive traffic, increase conversions, and maximise your return on investment.</p>
 
               </div>
 
             </article>
           </span>
 
-          <span id="item-5" class="search-item">
+          <span id="conversion" class="search-item">
 
             <article id="post-63" class="flex flex-col py-6 border-t border-gray-200 post-63 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
@@ -159,20 +159,20 @@ get_header();
                 <div class="flex flex-wrap">
                   <a class="category-item pr-1" href="//localhost:3000/category/uncategorized/">
                     <p class="capitalize font-bold text-gradient-purple-coral">
-                      Uncategorized </p>
+                      Conversion Optimisation </p>
                   </a>
                 </div>
                 <!-- /Tags -->
 
-                <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1">Introducing auto-triage rules for Dependabot</h2>
-                <p class="flex flex-col text-gray-600 break-words">Since the May beta release of our GitHub-curated Dependabot policies that detect and close false positive alerts, over 250k repositories.</p>
+                <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1">Conversion Optimisation</h2>
+                <p class="flex flex-col text-gray-600 break-words">Turn visitors into customers with smart conversion optimisation strategies that refine your website’s user experience and maximise the impact of every click</p>
 
               </div>
 
             </article>
           </span>
 
-          <span id="item-6" class="search-item">
+          <span id="social-media" class="search-item">
 
             <article id="post-43" class="flex flex-col py-6 border-t border-gray-200 post-43 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 
@@ -186,13 +186,13 @@ get_header();
                 <div class="flex flex-wrap">
                   <a class="category-item pr-1" href="//localhost:3000/category/uncategorized/">
                     <p class="capitalize font-bold text-gradient-purple-coral">
-                      Uncategorized </p>
+                      Social Media </p>
                   </a>
                 </div>
                 <!-- /Tags -->
 
-                <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1">Why Rust is the most admired</h2>
-                <p class="flex flex-col text-gray-600 break-words">For the eighth year in a row, Rust has topped the chart as “the most desired programming language” in Stack...For the eighth year in a row, Rust has topped the chart as “the most desired programming language” in Stack...</p>
+                <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1">Social Media Marketing</h2>
+                <p class="flex flex-col text-gray-600 break-words">Engage your audience with compelling social media campaigns that build brand awareness, foster connections, and drive results across platforms like Facebook, Instagram, and LinkedIn.</p>
 
               </div>
 
