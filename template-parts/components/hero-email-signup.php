@@ -4,8 +4,8 @@
     <div class="newsletter rounded-lg">
       <div class="flex flex-row flex-wrap color-bg-subtle rounded-lg">
         <div class="p-6 lg:p-7 py-6 lg:py-7 w-full lg:w-1/2 xl:w-7/12">
-          <h2 class="text-xxxl text-white font-semibold tracking-tight">Subscribe to The GitHub Insider</h2>
-          <p class="text-large text-gray-400 mt-2 mb-0">Discover tips, technical guides, and best practices in our monthly newsletter for developers.</p>
+          <h2 class="text-xxxl text-white font-semibold tracking-tight">Subscribe to enceladus insider 🌑</h2>
+          <p class="text-large text-gray-400 mt-2 mb-0">Discover tips, technical guides, and best practices in our monthly newsletter.</p>
         </div>
         <div class="p-3 lg:p-5 pt-3 lg:pt-7 pb-3 lg:pb-7 w-full lg:w-1/2 xl:w-5/12">
 
@@ -34,7 +34,7 @@
             <div class="checkbox text-gray-400 text-xs m-0 mt-2 form-group">
               <label class="font-normal">
                 <input id="optincheckbox" name="marketingEmailOptIn1" type="checkbox" value="True" class="accent-gray-500 bg-gray-800 text-gray-700 rounded cursor-pointer">
-                Yes please, I’d like GitHub and affiliates to use my information for personalized communications, targeted advertising and campaign effectiveness. See the <a href="https://github.com/site/privacy" target="blank">GitHub Privacy Statement</a> for more details. </label>
+                Yes please, I’d like Enceladus and affiliates to use my information for personalised communications, targeted advertising and campaign effectiveness. See the <a href="/privacy" target="blank">Enceladus Privacy Statement</a> for more details. </label>
             </div>
 
             <!-- button mobile -->

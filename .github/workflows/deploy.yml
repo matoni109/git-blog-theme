@@ -3,7 +3,7 @@ name: Cloudways API Git Push
 on:
   push:
     branches:
-      - develop
+      - enceladus-theme
 
 jobs:
   deploy:
