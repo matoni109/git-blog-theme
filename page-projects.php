@@ -154,7 +154,7 @@ get_header();
                       </div>
                       <!-- /Tags -->
 
-                      <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1"><a href="https://ondemand.cyclecollective.com.au/" rel="bookmark" target="_blank">Cycle Collective</a></h2>
+                      <h2 class="entry-title break-words text-xl md:text-2xl lg:text-3xl font-extrabold leading-tight mb-3 pt-1"><a href="https://ondemand.cyclecollective.com.au/" rel="bookmark" target="_blank">Collective On Demand</a></h2>
                       <p class="flex flex-col text-gray-600 break-words">The project was a complete audio fitness & spin instructor learning platform design and implementation. The complete solution included WordPress with LearnDash LMS, Memberpress for payments and subscriptions. </p>
                       <p class="flex flex-col text-gray-600 break-words pt-2">Contact Enceladus to talk through you next platform idea.</p>
 
