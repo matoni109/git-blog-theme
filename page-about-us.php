@@ -42,22 +42,22 @@ get_header();
               <article id="chris-wade" class="flex flex-col md:flex-row-reverse p-2 py-6 border-t border-gray-200 md:mb-2 post-76 post type-post status-publish format-standard has-post-thumbnail hentry category-code category-programming tag-code tag-computing tag-edge">
 
                 <header class="entry-header basis-1/2 pb-3 md:pb-1 lg:px-3">
-                  <a href="#" alt="Getting started with edge computing"><img src="https://res.cloudinary.com/oeelsafe/image/upload/v1627111944/r88j7skh1f3mpb4pd8lah4nag3kc.webp" class="rounded object-scale-down tease-thumbnail tease-thumbnail__img wp-post-image h-96 w-96" alt="Getting started with edge computing"></a>
+                  <a href="/author/chris/" alt="Getting started with edge computing"><img src="https://res.cloudinary.com/oeelsafe/image/upload/v1627111944/r88j7skh1f3mpb4pd8lah4nag3kc.webp" class="rounded object-scale-down tease-thumbnail tease-thumbnail__img wp-post-image h-96 w-96" alt="Getting started with edge computing"></a>
                 </header>
 
                 <div class="entry-summary md:px-3 basis-1/2">
 
                   <!-- Tags -->
                   <div class="flex flex-wrap">
-                    <a class="category-item pr-1" href="//git-hub-blog.local:3000/tag/code/">
+                    <a class="category-item pr-1" href="/tag/web-design/">
                       <p class="capitalize font-bold text-gradient-purple-coral">
-                        web development </p>
+                        web design </p>
                     </a>
 
                   </div>
                   <!-- /Tags -->
 
-                  <h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-1"><a href="#" rel="bookmark">Chris Wade</a></h2>
+                  <h2 class="entry-title text-xl md:text-3xl font-extrabold leading-tight mb-1 pt-1"><a href="/author/chris/" rel="bookmark">Chris Wade</a></h2>
                   <p class="flex flex-col text-gray-600 break-words pt-2">Chris Wade is a Brisbane based web developer, and sales specialist. He has worked in Shopify agencies, Ruby on Rails projects and has also launched projects on Wordpress, Bridgetown, Jekyll, and other content management systems.</p>
                   <p class="flex flex-col text-gray-600 break-words pt-2">He advises on general projects direction, and what tools you'll need to get the job done.</p>
                   <div class="flex items-center pt-2">
@@ -89,7 +89,7 @@ get_header();
 
                   <!-- Tags -->
                   <div class="flex flex-wrap">
-                    <a class="category-item pr-1" href="//git-hub-blog.local:3000/tag/code/">
+                    <a class="category-item pr-1" href="/tag/copywriting/">
                       <p class="capitalize font-bold text-gradient-purple-coral">
                         Copy Writer </p>
                     </a>
